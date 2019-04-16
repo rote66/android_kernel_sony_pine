@@ -1,0 +1,20 @@
+#
+# Touchscreen driver configuration
+#
+if TOUCHSCREEN_MTK_NT11206
+
+choice
+	default TOUCHSCREEN_NT11206_1080_1920
+		prompt "Novatek NT11206 Panels"
+
+config TOUCHSCREEN_NT11206_1080_1920
+		bool "NT11206_1080_1920"
+		depends on I2C
+		help
+			Say Y here if you have a Novatek NT11206 Panel
+			to the host processor over I2C
+
+			If unsure, say N.
+endchoice
+
+endif
