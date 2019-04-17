@@ -1,0 +1,10 @@
+AudDrv_BTCVSD.c:802:12:AudDrv_btcvsd_open	0	static
+AudDrv_BTCVSD.c:1278:13:AudDrv_btcvsd_mod_exit	0	static
+AudDrv_BTCVSD.c:440:13:AudDrv_btcvsd_compat_ioctl	64	static
+AudDrv_BTCVSD.c:1241:12:AudDrv_btcvsd_mod_init	48	static
+AudDrv_BTCVSD.c:809:16:AudDrv_btcvsd_write	176	static
+AudDrv_BTCVSD.c:1004:16:AudDrv_btcvsd_read	176	static
+AudDrv_BTCVSD.c:462:13:AudDrv_BTCVSD_DataTransfer.isra.2	0	static
+AudDrv_BTCVSD.c:596:12:AudDrv_BTCVSD_IRQ_handler	112	static
+AudDrv_BTCVSD.c:731:12:AudDrv_btcvsd_probe	96	static
+AudDrv_BTCVSD.c:370:13:AudDrv_btcvsd_ioctl	96	static

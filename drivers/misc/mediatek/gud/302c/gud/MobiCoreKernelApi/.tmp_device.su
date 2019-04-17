@@ -1,0 +1,11 @@
+device.c:43:24:mcore_device_create	48	static
+device.c:102:6:mcore_device_open	32	static
+device.c:108:6:mcore_device_close	16	static
+device.c:64:6:mcore_device_cleanup	48	static
+device.c:113:6:mcore_device_has_sessions	32	static
+device.c:142:6:mcore_device_remove_session	64	static
+device.c:164:17:mcore_device_resolve_session_id	48	static
+device.c:122:6:mcore_device_create_new_session	48	static
+device.c:182:13:mcore_device_allocate_contiguous_wsm	80	static
+device.c:214:6:mcore_device_free_contiguous_wsm	64	static
+device.c:244:13:mcore_device_find_contiguous_wsm	64	static

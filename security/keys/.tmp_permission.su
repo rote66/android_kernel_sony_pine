@@ -1,0 +1,2 @@
+permission.c:30:5:key_task_permission	64	static
+permission.c:89:5:key_validate	32	static

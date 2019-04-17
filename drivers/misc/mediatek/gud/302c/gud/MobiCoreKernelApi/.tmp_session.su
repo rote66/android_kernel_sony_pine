@@ -1,0 +1,8 @@
+session.c:22:32:bulk_buffer_descriptor_create	48	static
+session.c:39:17:session_create	48	static
+session.c:60:6:session_cleanup	64	static
+session.c:92:6:session_set_error_info	0	static
+session.c:97:9:session_get_last_err	0	static
+session.c:102:32:session_add_bulk_buf	80	static
+session.c:163:6:session_remove_bulk_buf	64	static
+session.c:205:10:session_find_bulk_buf	48	static

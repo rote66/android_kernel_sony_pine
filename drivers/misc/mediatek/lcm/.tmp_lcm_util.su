@@ -1,0 +1,5 @@
+lcm_util.c:90:12:lcm_util_set_data	32	static
+lcm_util.c:124:12:lcm_util_set_write_cmd_v1	192	static
+lcm_util.c:148:12:lcm_util_set_write_cmd_v2	16	static
+lcm_util.c:170:12:lcm_util_set_write_cmd_v23	16	static
+lcm_util.c:187:12:lcm_util_set_read_cmd_v2	48	static

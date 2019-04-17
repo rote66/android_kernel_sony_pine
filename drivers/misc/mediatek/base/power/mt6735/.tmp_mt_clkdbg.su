@@ -1,0 +1,16 @@
+mt_clkdbg.c:883:12:mt_clkdbg_init	0	static
+mt_clkdbg.c:847:12:clkdbg_open	16	static
+mt_clkdbg.c:810:12:clkdbg_show	224	static
+mt_clkdbg.c:668:12:clkdbg_set_rate	208	static
+mt_clkdbg.c:534:12:clkdbg_prepare_enable	192	static
+mt_clkdbg.c:624:12:clkdbg_set_parent	192	static
+mt_clkdbg.c:562:12:clkdbg_disable_unprepare	192	static
+mt_clkdbg.c:302:12:clkdbg_dump_state_all	112	static
+mt_clkdbg.c:852:16:clkdbg_write	176	static
+mt_clkdbg.c:894:12:mt_clkdbg_debug_init	16	static
+mt_clkdbg.c:700:7:reg_from_str	48	static
+mt_clkdbg.c:727:12:parse_reg_val_from_cmd	208	static
+mt_clkdbg.c:795:12:clkdbg_reg_clr	48	static
+mt_clkdbg.c:780:12:clkdbg_reg_set	48	static
+mt_clkdbg.c:765:12:clkdbg_reg_write	48	static
+mt_clkdbg.c:751:12:clkdbg_reg_read	48	static

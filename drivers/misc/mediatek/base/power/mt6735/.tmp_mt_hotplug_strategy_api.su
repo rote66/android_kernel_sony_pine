@@ -1,0 +1,9 @@
+mt_hotplug_strategy_api.c:22:5:hps_set_cpu_num_base	64	static
+mt_hotplug_strategy_api.c:95:5:hps_get_cpu_num_base	0	static
+mt_hotplug_strategy_api.c:125:5:hps_set_cpu_num_limit	64	static
+mt_hotplug_strategy_api.c:182:5:hps_get_cpu_num_limit	0	static
+mt_hotplug_strategy_api.c:221:5:hps_get_tlp	0	static
+mt_hotplug_strategy_api.c:237:5:hps_get_num_possible_cpus	48	static
+mt_hotplug_strategy_api.c:255:5:hps_get_num_online_cpus	32	static
+mt_hotplug_strategy_api.c:273:5:hps_get_enabled	0	static
+mt_hotplug_strategy_api.c:286:5:hps_set_enabled	48	static

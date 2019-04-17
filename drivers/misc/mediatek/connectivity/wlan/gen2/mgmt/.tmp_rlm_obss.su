@@ -1,0 +1,5 @@
+rlm_obss.c:70:6:rlmObssInit	64	static
+rlm_obss.c:92:9:rlmObssUpdateChnlLists	0	static
+rlm_obss.c:106:6:rlmObssScanDone	80	static
+rlm_obss.c:282:6:rlmObssTriggerScan	48	static
+rlm_obss.c:219:13:rlmObssScanTimeout	32	static

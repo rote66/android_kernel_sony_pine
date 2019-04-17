@@ -1,0 +1,17 @@
+bma4xy_stc.c:137:12:step_c_release	0	static
+bma4xy_stc.c:143:13:stc_c_unlocked_ioctl	0	static
+bma4xy_stc.c:162:12:bma4xy_step_c_open_report_data	0	static
+bma4xy_stc.c:167:12:bma4xy_step_c_set_delay	0	static
+bma4xy_stc.c:171:12:bma4xy_setp_d_set_selay	0	static
+bma4xy_stc.c:255:12:bma4xy_stc_get_data_significant	0	static
+bma4xy_stc.c:260:12:bma4xy_stc_get_data_step_d	0	static
+bma4xy_stc.c:373:20:bma4xy_stc_exit	16	static
+bma4xy_stc.c:330:12:bma4xy_stc_remove	16	static
+bma4xy_stc.c:366:19:bma4xy_stec_init	16	static
+bma4xy_stc.c:198:12:bma4xy_step_c_enable_significant	48	static
+bma4xy_stc.c:220:12:bma4xy_step_c_enable_step_detect	48	static
+bma4xy_stc.c:240:12:bma4xy_step_c_get_data	64	static
+bma4xy_stc.c:175:12:bma4xy_step_c_enable_nodata	48	static
+bma4xy_stc.c:127:12:step_c_open	16	static
+bma4xy_stc.c:66:5:step_counter_enable	16	static
+bma4xy_stc.c:335:12:bma4xy_stc_local_init	192	static

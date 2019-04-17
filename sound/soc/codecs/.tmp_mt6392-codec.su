@@ -1,0 +1,11 @@
+mt6392-codec.c:52:12:int_spk_amp_gain_get	0	static
+mt6392-codec.c:99:12:mt6392_spk_mode_get	0	static
+mt6392-codec.c:110:12:mt6392_spk_mode_put	0	static
+mt6392-codec.c:67:12:int_spk_amp_gain_put	48	static
+mt6392-codec.c:263:5:mt6392_int_spk_turn_on	32	static
+mt6392-codec.c:142:12:mt6392_speaker_oc_flag_get	32	static
+mt6392-codec.c:368:16:mt6392_codec_debug_read	112	static
+mt6392-codec.c:440:5:mt6392_codec_probe	80	static
+mt6392-codec.c:291:5:mt6392_int_spk_turn_off	32	static
+mt6392-codec.c:319:12:mt6392_int_spk_amp_wevent	32	static
+mt6392-codec.c:475:5:mt6392_codec_remove	32	static

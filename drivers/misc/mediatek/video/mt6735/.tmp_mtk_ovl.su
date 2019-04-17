@@ -1,0 +1,13 @@
+mtk_ovl.c:76:30:_get_context	0	static
+mtk_ovl.c:94:13:_ovl2mem_path_lock	32	static
+mtk_ovl.c:189:12:ovl2mem_callback	144	static
+mtk_ovl.c:101:13:_ovl2mem_path_unlock.isra.1	16	static
+mtk_ovl.c:89:13:ovl2mem_cmdq_enabled	0	static
+mtk_ovl.c:108:6:ovl2mem_setlayernum	32	static
+mtk_ovl.c:114:5:ovl2mem_get_info	32	static
+mtk_ovl.c:230:5:get_ovl2mem_ticket	0	static
+mtk_ovl.c:236:5:ovl2mem_input_config	96	static
+mtk_ovl.c:296:5:ovl2mem_output_config	32	static
+mtk_ovl.c:345:5:ovl2mem_trigger	64	static
+mtk_ovl.c:394:6:ovl2mem_wait_done	48	static
+mtk_ovl.c:417:5:ovl2mem_deinit	48	static

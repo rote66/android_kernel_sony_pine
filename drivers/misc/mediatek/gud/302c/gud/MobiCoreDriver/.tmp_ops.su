@@ -1,0 +1,14 @@
+ops.c:164:13:fastcall_work_func	112	static
+ops.c:96:6:mc_fastcall	80	static
+ops.c:109:5:mc_fastcall_init	64	static
+ops.c:133:6:mc_fastcall_destroy	32	static
+ops.c:216:5:mc_info	48	static
+ops.c:251:10:mc_active_core	0	static
+ops.c:256:5:mc_switch_core	32	static
+ops.c:290:6:mc_cpu_offfline	48	static
+ops.c:310:12:mobicore_cpu_callback	16	static
+ops.c:331:5:mc_yield	32	static
+ops.c:346:5:mc_nsiq	32	static
+ops.c:359:5:_nsiq	16	static
+ops.c:372:5:mc_init	32	static
+ops.c:413:10:mc_get_version	0	static

@@ -1,0 +1,15 @@
+NVTtouch_206_ext_proc.c:351:14:c_start	0	static
+NVTtouch_206_ext_proc.c:365:14:c_next	0	static
+NVTtouch_206_ext_proc.c:379:13:c_stop	0	static
+NVTtouch_206_ext_proc.c:158:16:nvt_get_fw_pipe	48	static
+NVTtouch_206_ext_proc.c:304:16:c_fw_version_show	16	static
+NVTtouch_206_ext_proc.c:318:16:c_show	80	static
+NVTtouch_206_ext_proc.c:78:6:nvt_change_mode	48	static
+NVTtouch_206_ext_proc.c:111:6:nvt_get_fw_info	128	static
+NVTtouch_206_ext_proc.c:406:16:nvt_fw_version_open	32	static
+NVTtouch_206_ext_proc.c:188:6:nvt_read_mdata	208	static
+NVTtouch_206_ext_proc.c:522:16:nvt_diff_open	64	static
+NVTtouch_206_ext_proc.c:471:16:nvt_raw_open	64	static
+NVTtouch_206_ext_proc.c:427:16:nvt_baseline_open	64	static
+NVTtouch_206_ext_proc.c:290:6:nvt_get_mdata	16	static
+NVTtouch_206_ext_proc.c:574:9:nvt_extra_proc_init	48	static

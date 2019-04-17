@@ -1,0 +1,8 @@
+cnm_timer.c:214:13:cnmTimerStopTimer_impl	80	static
+cnm_timer.c:70:16:cnmTimerSetTimer	48	static
+cnm_timer.c:104:6:cnmTimerInitialize	64	static
+cnm_timer.c:134:6:cnmTimerDestroy	64	static
+cnm_timer.c:169:6:cnmTimerInitTimer	48	static
+cnm_timer.c:258:6:cnmTimerStopTimer	32	static
+cnm_timer.c:277:6:cnmTimerStartTimer	96	static
+cnm_timer.c:340:6:cnmTimerDoTimeOutCheck	128	static

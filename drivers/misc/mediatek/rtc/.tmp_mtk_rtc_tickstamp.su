@@ -1,0 +1,8 @@
+mtk_rtc_tickstamp.c:73:21:ts_open.constprop	32	static
+mtk_rtc_tickstamp.c:44:13:wait_vfsmount	64	static
+mtk_rtc_tickstamp.c:193:13:ts_write_stamp	64	static
+mtk_rtc_tickstamp.c:235:6:ts_init	32	static
+mtk_rtc_tickstamp.c:250:6:ts_stamp	48	static
+mtk_rtc_tickstamp.c:266:6:ts_set	16	static
+mtk_rtc_tickstamp.c:135:13:ts_read_stamp	96	static
+mtk_rtc_tickstamp.c:270:6:ts_get	48	static

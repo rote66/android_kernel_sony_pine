@@ -1,0 +1,15 @@
+assoc_array.c:22:12:assoc_array_subtree_iterate	80	static
+assoc_array.c:359:13:assoc_array_destroy_subtree	64	static
+assoc_array.c:1331:13:assoc_array_rcu_cleanup	32	static
+assoc_array.c:181:1:assoc_array_walk.isra.0	80	static
+assoc_array.c:1077:12:assoc_array_delete_collapse_iterator	16	static
+assoc_array.c:144:5:assoc_array_iterate	16	static
+assoc_array.c:318:7:assoc_array_find	112	static
+assoc_array.c:457:6:assoc_array_destroy	32	static
+assoc_array.c:1062:6:assoc_array_insert_set_object	16	static
+assoc_array.c:1305:26:assoc_array_clear	32	static
+assoc_array.c:1376:6:assoc_array_apply_edit	16	static
+assoc_array.c:1440:6:assoc_array_cancel_edit	32	static
+assoc_array.c:995:26:assoc_array_insert	192	static
+assoc_array.c:1110:26:assoc_array_delete	160	static
+assoc_array.c:1484:5:assoc_array_gc	144	static

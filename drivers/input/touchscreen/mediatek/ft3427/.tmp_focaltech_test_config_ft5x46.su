@@ -1,0 +1,3 @@
+focaltech_test_config_ft5x46.c:23:6:OnInit_FT5X22_TestItem	576	static
+focaltech_test_config_ft5x46.c:161:6:OnInit_FT5X22_BasicThreshold	608	static
+focaltech_test_config_ft5x46.c:448:6:SetTestItem_FT5X22	0	static

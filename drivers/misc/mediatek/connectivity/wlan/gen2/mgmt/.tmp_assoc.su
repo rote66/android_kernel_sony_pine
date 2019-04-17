@@ -1,0 +1,9 @@
+assoc.c:135:1:assocBuildCapabilityInfo	32	static
+assoc.c:464:13:assocSendReAssocReqFrame	128	static
+assoc.c:639:13:assocCheckTxReAssocReqFrame	48	static
+assoc.c:682:13:assocCheckTxReAssocRespFrame	48	static
+assoc.c:727:1:assocCheckRxReAssocRspFrameStatus	80	static
+assoc.c:937:13:assocSendDisAssocFrame	80	static
+assoc.c:1015:1:assocProcessRxDisassocFrame	48	static
+assoc.c:1062:13:assocProcessRxAssocReqFrame	160	static
+assoc.c:1484:13:assocSendReAssocRespFrame	96	static

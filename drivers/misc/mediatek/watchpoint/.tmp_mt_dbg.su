@@ -1,0 +1,5 @@
+mt_dbg.c:374:15:dbgregs_hotplug_callback	48	static
+mt_dbg.c:457:19:regs_backup	16	static
+mt_dbg.c:122:15:mt_save_dbg_regs	64	static
+mt_dbg.c:217:6:mt_restore_dbg_regs	64	static
+mt_dbg.c:321:6:mt_copy_dbg_regs	64	static

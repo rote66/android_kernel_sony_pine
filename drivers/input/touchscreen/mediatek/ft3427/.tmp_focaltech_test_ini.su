@@ -1,0 +1,14 @@
+focaltech_test_ini.c:213:12:ini_file_get_line.constprop	0	static
+focaltech_test_ini.c:43:5:fts_strncmp	0	static
+focaltech_test_ini.c:72:5:ini_get_key	64	static
+focaltech_test_ini.c:153:8:ini_str_trim_r	560	static
+focaltech_test_ini.c:182:8:ini_str_trim_l	560	static
+focaltech_test_ini.c:103:5:ini_get_sections	592	static
+focaltech_test_ini.c:314:5:my_atoi	0	static
+focaltech_test_ini.c:334:5:isspace	0	static
+focaltech_test_ini.c:342:5:isdigit	0	static
+focaltech_test_ini.c:391:5:atoi	32	static
+focaltech_test_ini.c:396:5:init_key_data	48	static
+focaltech_test_ini.c:419:5:release_key_data	16	static
+focaltech_test_ini.c:426:5:print_key_data	48	static
+focaltech_test_ini.c:460:5:ini_get_key_data	1088	static

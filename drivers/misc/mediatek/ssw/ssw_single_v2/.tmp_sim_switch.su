@@ -1,0 +1,15 @@
+sim_switch.c:105:16:ssw_attr_show	16	static
+sim_switch.c:114:16:ssw_attr_store	16	static
+sim_switch.c:280:12:sim_switch_remove	0	static
+sim_switch.c:286:13:sim_switch_shutdown	0	static
+sim_switch.c:291:12:sim_switch_suspend	0	static
+sim_switch.c:297:12:sim_switch_resume	0	static
+sim_switch.c:339:20:sim_switch_driver_exit	0	static
+sim_switch.c:168:12:set_sim_gpio	32	static
+sim_switch.c:137:16:ssw_mode_store	48	static
+sim_switch.c:123:16:ssw_mode_show	32	static
+sim_switch.c:322:19:sim_switch_driver_init	32	static
+sim_switch.c:42:14:get_sim_switch_type	16	static
+sim_switch.c:89:5:ssw_sysfs_init	32	static
+sim_switch.c:251:12:sim_switch_probe	48	static
+sim_switch.c:201:5:switch_sim_mode	48	static

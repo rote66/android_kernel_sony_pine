@@ -1,0 +1,13 @@
+process_keys.c:492:6:lookup_user_key_possessed	0	static
+process_keys.c:43:5:install_user_keyrings	96	static
+process_keys.c:866:19:init_root_keyring	16	static
+process_keys.c:131:5:install_thread_keyring_to_cred	32	static
+process_keys.c:174:5:install_process_keyring_to_cred	32	static
+process_keys.c:219:5:install_session_keyring_to_cred	32	static
+process_keys.c:276:6:key_fsuid_changed	32	static
+process_keys.c:290:6:key_fsgid_changed	32	static
+process_keys.c:322:11:search_my_process_keyrings	64	static
+process_keys.c:434:11:search_process_keyrings	48	static
+process_keys.c:753:6:join_session_keyring	80	static
+process_keys.c:516:11:lookup_user_key	224	static
+process_keys.c:826:6:key_change_session_keyring	32	static

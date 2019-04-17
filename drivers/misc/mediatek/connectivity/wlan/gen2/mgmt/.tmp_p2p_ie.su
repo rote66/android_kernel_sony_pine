@@ -1,0 +1,14 @@
+p2p_ie.c:116:1:wfdFuncAppendAttriDevInfo	0	static
+p2p_ie.c:315:9:wfdFuncCalculateAttriLenSessionInfo	0	static
+p2p_ie.c:164:1:wfdFuncAppendAttriAssocBssid	0	static
+p2p_ie.c:215:1:wfdFuncAppendAttriCoupledSinkInfo	0	static
+p2p_ie.c:337:1:wfdFuncAppendAttriSessionInfo	48	static
+p2p_ie.c:51:1:p2pCalculate_IEForAssocReq	0	static
+p2p_ie.c:87:6:p2pGenerate_IEForAssocReq	48	static
+p2p_ie.c:262:1:wfdFuncAppendAttriExtCapability	0	static
+p2p_ie.c:382:1:wfdFuncGenerateWfd_IE	384	static
+p2p_ie.c:469:1:wfdFuncCalculateWfdIELenForAssocRsp	16	static
+p2p_ie.c:492:6:wfdFuncGenerateWfdIEForAssocRsp	48	static
+p2p_ie.c:531:6:p2pFuncComposeNoaAttribute	48	static
+p2p_ie.c:591:9:p2pFuncCalculateP2P_IE_NoA	32	static
+p2p_ie.c:613:6:p2pFuncGenerateP2P_IE_NoA	48	static

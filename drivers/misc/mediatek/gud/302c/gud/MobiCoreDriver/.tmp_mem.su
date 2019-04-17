@@ -1,0 +1,11 @@
+mem.c:568:13:unmap_mmu_table	64	static
+mem.c:121:22:find_mmu_table	0	static
+mem.c:136:22:find_mmu_table_by_phys_addr	0	static
+mem.c:584:5:mc_free_mmu_table	64	static
+mem.c:656:5:mc_lock_mmu_table	64	static
+mem.c:688:22:mc_alloc_mmu_table	144	static
+mem.c:726:13:mc_find_mmu_table	64	static
+mem.c:754:6:mc_clean_mmu_tables	48	static
+mem.c:771:6:mc_clear_mmu_tables	48	static
+mem.c:789:5:mc_init_mmu_tables	16	static
+mem.c:805:6:mc_release_mmu_tables	48	static

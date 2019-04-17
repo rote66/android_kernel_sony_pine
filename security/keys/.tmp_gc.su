@@ -1,0 +1,6 @@
+gc.c:127:22:key_gc_unused_keys.constprop	48	static
+gc.c:56:6:key_schedule_gc	32	static
+gc.c:175:13:key_garbage_collector	144	static
+gc.c:77:6:key_schedule_gc_links	16	static
+gc.c:87:13:key_gc_timer_func	16	static
+gc.c:104:6:key_gc_keytype	32	static

@@ -1,0 +1,16 @@
+disp_debug.c:1363:16:layer_debug_read	32	static
+disp_debug.c:1369:16:layer_debug_write	64	static
+disp_debug.c:1347:12:layer_debug_open	48	static
+disp_debug.c:1382:12:layer_debug_release	48	static
+disp_debug.c:163:13:process_dbg_debug	1360	static
+disp_debug.c:577:5:get_ovl1_to_mem_on	0	static
+disp_debug.c:582:6:switch_ovl1_to_mem	32	static
+disp_debug.c:588:6:ddp_process_dbg_opt	800	static
+disp_debug.c:845:6:mtkfb_process_dbg_opt	976	static
+disp_debug.c:1191:13:_draw_block	80	static
+disp_debug.c:1206:6:_debug_fps_meter	160	static
+disp_debug.c:1267:7:disp_get_fmt_name	16	static
+disp_debug.c:1403:6:sub_debug_init	48	static
+disp_debug.c:1433:6:sub_debug_deinit	32	static
+disp_debug.c:1441:14:ddp_dump_reg_to_buf	80	static
+disp_debug.c:1475:14:ddp_dump_lcm_param_to_buf	48	static

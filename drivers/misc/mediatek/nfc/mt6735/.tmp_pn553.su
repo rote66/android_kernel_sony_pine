@@ -1,0 +1,15 @@
+pn553.c:603:12:pn553_dev_open	0	static
+pn553.c:794:12:nxp_nfc_remove	16	static
+pn553.c:1034:19:pn553_dev_init	32	static
+pn553.c:963:12:pn553_remove	80	static
+pn553.c:176:13:pn553_enable_irq	48	static
+pn553.c:427:16:pn553_dev_write	64	static
+pn553.c:158:13:pn553_disable_irq	48	static
+pn553.c:816:12:pn553_probe	128	static
+pn553.c:1055:20:pn553_dev_exit	16	static
+pn553.c:145:12:mt_nfc_get_gpio_value	16	static
+pn553.c:195:20:pn553_dev_irq_handler	32	static
+pn553.c:214:16:pn553_dev_read	144	static
+pn553.c:681:12:mt_nfc_pinctrl_select	32	static
+pn553.c:618:13:pn553_dev_ioctl	32	static
+pn553.c:780:12:nxp_nfc_probe	48	static

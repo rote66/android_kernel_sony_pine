@@ -1,0 +1,9 @@
+bounce.c:74:14:mempool_alloc_pages_isa	16	static
+bounce.c:125:13:bounce_end_io	64	static
+bounce.c:155:13:bounce_end_io_write_isa	16	static
+bounce.c:150:13:bounce_end_io_write	16	static
+bounce.c:101:13:copy_to_high_bio_irq.isra.3	96	static
+bounce.c:171:13:bounce_end_io_read	48	static
+bounce.c:257:6:blk_queue_bounce	128	static
+bounce.c:176:13:bounce_end_io_read_isa	48	static
+bounce.c:83:5:init_emergency_isa_pool	32	static

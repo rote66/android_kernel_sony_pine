@@ -1,0 +1,3 @@
+gcpu.c:47:20:gcpu_irq_handler	0	static
+gcpu.c:84:20:gcpu_exit	0	static
+gcpu.c:55:19:gcpu_init	48	static

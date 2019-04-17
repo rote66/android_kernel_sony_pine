@@ -1,0 +1,8 @@
+connection.c:30:20:connection_new	32	static
+connection.c:47:6:connection_cleanup	32	static
+connection.c:58:6:connection_connect	0	static
+connection.c:65:8:connection_read_data_msg	48	static
+connection.c:99:8:connection_read_data	80	static
+connection.c:93:8:connection_read_datablock	16	static
+connection.c:144:5:connection_write_data	64	static
+connection.c:174:5:connection_process	48	static

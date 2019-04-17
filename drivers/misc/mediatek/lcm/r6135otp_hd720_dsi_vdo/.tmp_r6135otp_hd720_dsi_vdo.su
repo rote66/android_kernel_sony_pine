@@ -1,0 +1,7 @@
+r6135otp_hd720_dsi_vdo.c:443:21:lcm_compare_id	0	static
+r6135otp_hd720_dsi_vdo.c:305:13:lcm_get_params	32	static
+r6135otp_hd720_dsi_vdo.c:299:13:lcm_set_util_funcs	16	static
+r6135otp_hd720_dsi_vdo.c:270:13:push_table.constprop	48	static
+r6135otp_hd720_dsi_vdo.c:352:13:lcm_init	32	static
+r6135otp_hd720_dsi_vdo.c:392:13:lcm_resume	32	static
+r6135otp_hd720_dsi_vdo.c:370:13:lcm_suspend	48	static

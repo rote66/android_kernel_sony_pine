@@ -1,0 +1,17 @@
+focaltech_test_ft5x46.c:2691:13:ShowRawData	80	static
+focaltech_test_ft5x46.c:2531:13:Save_Test_Data	144	static
+focaltech_test_ft5x46.c:2575:22:GetChannelNum	48	static
+focaltech_test_ft5x46.c:2237:12:StartScan	64	static
+focaltech_test_ft5x46.c:2750:22:SwitchToNoMapping	64	static
+focaltech_test_ft5x46.c:2287:15:ReadRawData.isra.2.constprop	112	static
+focaltech_test_ft5x46.c:2625:22:GetRawData	48	static
+focaltech_test_ft5x46.c:2382:15:GetTxSC_CB.constprop	64	static
+focaltech_test_ft5x46.c:338:5:FT5X46_get_test_data	32	static
+focaltech_test_ft5x46.c:356:15:FT5X46_TestItem_EnterFactoryMode	64	static
+focaltech_test_ft5x46.c:416:15:FT5X46_TestItem_RawDataTest	176	static
+focaltech_test_ft5x46.c:718:15:FT5X46_TestItem_SCapRawDataTest	144	static
+focaltech_test_ft5x46.c:1002:15:FT5X46_TestItem_SCapCbTest	144	static
+focaltech_test_ft5x46.c:1337:15:FT5X46_TestItem_PanelDifferTest	192	static
+focaltech_test_ft5x46.c:1609:15:FT5X46_TestItem_LCD_NoiseTest	176	static
+focaltech_test_ft5x46.c:2030:15:FT5X46_TestItem_SITORawdataUniformityTest	208	static
+focaltech_test_ft5x46.c:155:9:FT5X46_StartTest	128	static

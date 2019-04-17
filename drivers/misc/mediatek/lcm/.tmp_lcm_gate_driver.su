@@ -1,0 +1,5 @@
+lcm_gate_driver.c:61:5:lcm_gate_write_bytes	48	static
+lcm_gate_driver.c:40:12:ktd2151_probe	32	static
+lcm_gate_driver.c:97:20:lcm_gate_i2c_exit	16	static
+lcm_gate_driver.c:50:12:ktd2151_remove	16	static
+lcm_gate_driver.c:82:19:lcm_gate_i2c_init	32	static

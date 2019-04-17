@@ -1,0 +1,11 @@
+roaming_fsm.c:88:6:roamingFsmInit	32	static
+roaming_fsm.c:115:6:roamingFsmUninit	32	static
+roaming_fsm.c:137:6:roamingFsmSendCmd	80	static
+roaming_fsm.c:172:6:roamingFsmScanResultsUpdate	48	static
+roaming_fsm.c:273:6:roamingFsmSteps	112	static
+roaming_fsm.c:353:6:roamingFsmRunEventStart	64	static
+roaming_fsm.c:398:6:roamingFsmRunEventDiscovery	48	static
+roaming_fsm.c:446:6:roamingFsmRunEventRoam	64	static
+roaming_fsm.c:486:6:roamingFsmRunEventFail	64	static
+roaming_fsm.c:527:6:roamingFsmRunEventAbort	64	static
+roaming_fsm.c:562:13:roamingFsmProcessEvent	48	static

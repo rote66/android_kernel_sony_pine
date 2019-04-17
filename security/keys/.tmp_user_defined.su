@@ -1,0 +1,8 @@
+user_defined.c:210:12:logon_vet_description	32	static
+user_defined.c:63:5:user_preparse	48	static
+user_defined.c:87:6:user_free_preparse	16	static
+user_defined.c:162:6:user_destroy	16	static
+user_defined.c:97:5:user_update	64	static
+user_defined.c:144:6:user_revoke	32	static
+user_defined.c:187:6:user_read	32	static
+user_defined.c:174:6:user_describe	32	static

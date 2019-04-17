@@ -1,0 +1,7 @@
+mt_soc_codec_speaker_63xx.c:75:6:Speaker_ClassD_Open	32	static
+mt_soc_codec_speaker_63xx.c:107:6:Speaker_ClassD_close	16	static
+mt_soc_codec_speaker_63xx.c:118:6:Speaker_ClassAB_Open	32	static
+mt_soc_codec_speaker_63xx.c:155:6:Speaker_ClassAB_close	16	static
+mt_soc_codec_speaker_63xx.c:164:6:Speaker_ReveiverMode_Open	16	static
+mt_soc_codec_speaker_63xx.c:177:6:Speaker_ReveiverMode_close	16	static
+mt_soc_codec_speaker_63xx.c:185:6:GetSpeakerOcFlag	32	static

@@ -1,0 +1,15 @@
+musbhsdma.c:45:12:dma_controller_start	0	static
+musbhsdma.c:79:28:dma_channel_allocate	0	static
+musbhsdma.c:125:13:dma_channel_release	0	static
+musbhsdma.c:258:12:dma_channel_pause	0	static
+musbhsdma.c:269:12:dma_channel_resume	0	static
+musbhsdma.c:300:12:dma_channel_check_residue	0	static
+musbhsdma.c:219:12:dma_channel_abort	112	static
+musbhsdma.c:275:12:dma_channel_tx_status	80	static
+musbhsdma.c:522:4:USB_DMA_status	144	static
+musbhsdma.c:554:5:USB_DMA_address	112	static
+musbhsdma.c:326:13:dma_controller_irq	192	static
+musbhsdma.c:174:12:dma_channel_program	144	static
+musbhsdma.c:53:12:dma_controller_stop	48	static
+musbhsdma.c:442:6:dma_controller_destroy	32	static
+musbhsdma.c:457:24:dma_controller_create	64	static

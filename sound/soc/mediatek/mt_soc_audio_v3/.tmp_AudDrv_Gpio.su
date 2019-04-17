@@ -1,0 +1,6 @@
+AudDrv_Gpio.c:103:6:AudDrv_GPIO_probe	64	static
+AudDrv_Gpio.c:210:5:AudDrv_GPIO_PMIC_Select	32	static
+AudDrv_Gpio.c:233:5:AudDrv_GPIO_I2S_Select	32	static
+AudDrv_Gpio.c:256:5:AudDrv_GPIO_EXTAMP_Select	32	static
+AudDrv_Gpio.c:279:5:AudDrv_GPIO_EXTAMP2_Select	32	static
+AudDrv_Gpio.c:302:5:AudDrv_GPIO_RCVSPK_Select	32	static

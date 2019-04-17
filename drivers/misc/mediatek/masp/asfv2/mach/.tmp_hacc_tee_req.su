@@ -1,0 +1,3 @@
+hacc_tee_req.c:46:5:open_sdriver_connection	64	static
+hacc_tee_req.c:93:5:close_sdriver_connection	48	static
+hacc_tee_req.c:132:5:tee_secure_request	144	static

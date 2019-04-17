@@ -1,0 +1,2 @@
+hacc_service.c:18:5:masp_hal_get_uuid	32	static
+hacc_service.c:28:5:masp_hal_sbc_enabled	16	static

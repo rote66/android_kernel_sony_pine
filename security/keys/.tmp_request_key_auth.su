@@ -1,0 +1,9 @@
+request_key_auth.c:47:12:request_key_auth_preparse	0	static
+request_key_auth.c:52:13:request_key_auth_free_preparse	0	static
+request_key_auth.c:59:12:request_key_auth_instantiate	0	static
+request_key_auth.c:84:13:request_key_auth_read	32	static
+request_key_auth.c:69:13:request_key_auth_describe	48	static
+request_key_auth.c:111:13:request_key_auth_revoke	32	static
+request_key_auth.c:126:13:request_key_auth_destroy	32	static
+request_key_auth.c:147:13:request_key_auth_new	96	static
+request_key_auth.c:242:13:key_get_instantiation_authkey	144	static

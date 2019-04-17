@@ -1,0 +1,4 @@
+zcomp_lz4.c:40:13:zcomp_lz4_destroy	16	static
+zcomp_lz4.c:59:12:zcomp_lz4_decompress	32	static
+zcomp_lz4.c:52:12:zcomp_lz4_compress	16	static
+zcomp_lz4.c:18:14:zcomp_lz4_create	16	static

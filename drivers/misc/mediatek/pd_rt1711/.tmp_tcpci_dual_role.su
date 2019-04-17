@@ -1,0 +1,4 @@
+tcpci_dual_role.c:34:12:tcpc_dual_role_get_prop	0	static
+tcpci_dual_role.c:63:12:tcpc_dual_role_prop_is_writeable	0	static
+tcpci_dual_role.c:111:12:tcpc_dual_role_set_prop	48	static
+tcpci_dual_role.c:145:5:tcpc_dual_role_phy_init	64	static

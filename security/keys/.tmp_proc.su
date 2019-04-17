@@ -1,0 +1,6 @@
+proc.c:306:12:proc_key_users_open	16	static
+proc.c:340:12:proc_key_users_show	32	static
+proc.c:328:14:proc_key_users_next	16	static
+proc.c:334:13:proc_key_users_stop	16	static
+proc.c:311:14:proc_key_users_start	32	static
+proc.c:66:19:key_proc_init	16	static

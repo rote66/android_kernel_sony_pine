@@ -1,0 +1,9 @@
+usb20_host.c:703:6:mt_usb_otg_init	0	static
+usb20_host.c:704:6:mt_usb_init_drvvbus	0	static
+usb20_host.c:705:6:mt_usb_set_vbus	0	static
+usb20_host.c:706:5:mt_usb_get_vbus_status	0	static
+usb20_host.c:707:6:mt_usb_iddig_int	0	static
+usb20_host.c:708:6:switch_int_to_device	0	static
+usb20_host.c:709:6:switch_int_to_host	0	static
+usb20_host.c:710:6:switch_int_to_host_and_mask	0	static
+usb20_host.c:711:6:musb_session_restart	0	static

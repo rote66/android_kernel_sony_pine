@@ -1,0 +1,7 @@
+hem_mbox.c:274:6:mboxInitMsgMap	80	static
+hem_mbox.c:321:6:mboxSetup	64	static
+hem_mbox.c:347:1:mboxSendMsg	64	static
+hem_mbox.c:390:6:mboxRcvAllMsg	96	static
+hem_mbox.c:422:6:mboxInitialize	32	static
+hem_mbox.c:446:6:mboxDestroy	96	static
+hem_mbox.c:479:6:mboxDummy	32	static

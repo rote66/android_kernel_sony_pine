@@ -1,0 +1,4 @@
+systracker_platform.c:217:19:mt_systracker_init	16	static
+systracker_platform.c:56:13:write_timeout_handler	48	static
+systracker_platform.c:32:12:read_timeout_handler	48	static
+systracker_platform.c:77:12:systracker_platform_hook_fault	16	static

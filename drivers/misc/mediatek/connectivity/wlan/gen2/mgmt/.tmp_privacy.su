@@ -1,0 +1,14 @@
+privacy.c:273:6:secSetPortBlocked	16	static
+privacy.c:296:9:secGetPortStatus	0	static
+privacy.c:318:1:secTxPortControlCheck	48	static
+privacy.c:361:9:secRxPortControlCheck	16	static
+privacy.c:189:9:secCheckClassError	64	static
+privacy.c:395:6:secSetCipherSuite	64	static
+privacy.c:494:1:secProcessEAPOL	48	static
+privacy.c:539:1:secHandleTxDoneCallback	32	static
+privacy.c:597:6:secClearPmkid	32	static
+privacy.c:73:6:secInit	48	static
+privacy.c:620:9:secRsnKeyHandshakeEnabled	32	static
+privacy.c:655:9:secTransmitKeyExist	32	static
+privacy.c:674:9:secEnabledInAis	32	static
+privacy.c:705:9:secIsProtectedFrame	48	static

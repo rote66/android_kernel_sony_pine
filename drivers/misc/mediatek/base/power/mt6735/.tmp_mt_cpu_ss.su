@@ -1,0 +1,17 @@
+mt_cpu_ss.c:359:20:mt_cpu_ss_exit	0	static
+mt_cpu_ss.c:40:22:mt_cpu_ss_timer_func	32	static
+mt_cpu_ss.c:51:5:mt_cpu_ss_thread_handler	128	static
+mt_cpu_ss.c:313:1:cpu_ss_mode_proc_open	16	static
+mt_cpu_ss.c:312:1:cpu_ss_period_proc_open	16	static
+mt_cpu_ss.c:311:1:cpu_ss_period_mode_proc_open	16	static
+mt_cpu_ss.c:310:1:cpu_ss_debug_mode_proc_open	16	static
+mt_cpu_ss.c:233:12:cpu_ss_mode_proc_show	32	static
+mt_cpu_ss.c:205:12:cpu_ss_period_proc_show	16	static
+mt_cpu_ss.c:149:12:cpu_ss_period_mode_proc_show	16	static
+mt_cpu_ss.c:108:12:cpu_ss_debug_mode_proc_show	16	static
+mt_cpu_ss.c:84:14:_copy_from_user_for_proc	48	static
+mt_cpu_ss.c:257:16:cpu_ss_mode_proc_write	48	static
+mt_cpu_ss.c:212:16:cpu_ss_period_proc_write	48	static
+mt_cpu_ss.c:115:16:cpu_ss_debug_mode_proc_write	64	static
+mt_cpu_ss.c:156:16:cpu_ss_period_mode_proc_write	96	static
+mt_cpu_ss.c:351:19:mt_cpu_ss_init	128	static

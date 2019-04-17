@@ -1,0 +1,8 @@
+hacc_tee.c:56:14:hacc_secure_request	80	static
+hacc_tee.c:29:15:masp_hal_secure_algo_init	0	static
+hacc_tee.c:37:15:masp_hal_secure_algo_deinit	0	static
+hacc_tee.c:45:14:masp_hal_sp_hacc_init	0	static
+hacc_tee.c:51:14:masp_hal_sp_hacc_blk_sz	0	static
+hacc_tee.c:119:6:masp_hal_secure_algo	64	static
+hacc_tee.c:174:16:masp_hal_sp_hacc_enc	16	static
+hacc_tee.c:180:16:masp_hal_sp_hacc_dec	16	static

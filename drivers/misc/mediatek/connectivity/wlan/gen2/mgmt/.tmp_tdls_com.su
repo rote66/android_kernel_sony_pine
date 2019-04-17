@@ -1,0 +1,2 @@
+tdls_com.c:61:9:TdlsFrameGeneralIeAppend	112	static
+tdls_com.c:232:1:TdlsDataFrameSend	128	static

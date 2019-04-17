@@ -1,0 +1,9 @@
+cpuidle-mt6735.c:121:12:mt6735_cpuidle_init	64	static
+cpuidle-mt6735.c:24:27:dpidle_enter	0	static
+cpuidle-mt6735.c:44:12:mt_dpidle_enter	16	static
+cpuidle-mt6735.c:29:27:soidle_enter	0	static
+cpuidle-mt6735.c:50:12:mt_soidle_enter	16	static
+cpuidle-mt6735.c:34:27:slidle_enter	0	static
+cpuidle-mt6735.c:56:12:mt_slidle_enter	16	static
+cpuidle-mt6735.c:39:27:rgidle_enter	0	static
+cpuidle-mt6735.c:62:12:mt_rgidle_enter	16	static

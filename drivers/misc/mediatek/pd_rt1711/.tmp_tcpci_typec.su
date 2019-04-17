@@ -1,0 +1,12 @@
+tcpci_typec.c:438:13:typec_unattached_entry	64	static
+tcpci_typec.c:263:12:typec_alert_attach_state_change	32	static
+tcpci_typec.c:1388:5:tcpc_typec_handle_ra_detach	64	static
+tcpci_typec.c:1426:5:tcpc_typec_handle_cc_change	80	static
+tcpci_typec.c:1747:5:tcpc_typec_handle_ps_change	64	static
+tcpci_typec.c:1787:5:tcpc_typec_handle_vsafe0v	64	static
+tcpci_typec.c:1613:5:tcpc_typec_handle_timeout	48	static
+tcpci_typec.c:1814:5:tcpc_typec_swap_role	32	static
+tcpci_typec.c:1842:5:tcpc_typec_set_rp_level	32	static
+tcpci_typec.c:1869:5:tcpc_typec_change_role	48	static
+tcpci_typec.c:1940:5:tcpc_typec_init	48	static
+tcpci_typec.c:1985:7:tcpc_typec_deinit	0	static

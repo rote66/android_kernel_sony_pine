@@ -1,0 +1,6 @@
+main.c:199:20:mcapi_exit	32	static
+main.c:154:19:mcapi_init	96	static
+main.c:137:13:mcapi_callback	80	static
+main.c:53:14:mcapi_unique_id	0	static
+main.c:79:6:mcapi_insert_connection	32	static
+main.c:89:6:mcapi_remove_connection	32	static

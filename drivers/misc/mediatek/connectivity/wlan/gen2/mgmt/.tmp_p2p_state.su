@@ -1,0 +1,11 @@
+p2p_state.c:17:1:p2pStateInit_IDLE	32	static
+p2p_state.c:62:6:p2pStateAbort_IDLE	32	static
+p2p_state.c:84:6:p2pStateInit_CHNL_ON_HAND	48	static
+p2p_state.c:122:1:p2pStateAbort_CHNL_ON_HAND	64	static
+p2p_state.c:160:1:p2pStateAbort_REQING_CHANNEL	32	static
+p2p_state.c:197:6:p2pStateInit_AP_CHANNEL_DETECT	16	static
+p2p_state.c:222:1:p2pStateAbort_AP_CHANNEL_DETECT	64	static
+p2p_state.c:270:6:p2pStateInit_SCAN	16	static
+p2p_state.c:288:6:p2pStateAbort_SCAN	32	static
+p2p_state.c:303:1:p2pStateInit_GC_JOIN	80	static
+p2p_state.c:449:1:p2pStateAbort_GC_JOIN	48	static

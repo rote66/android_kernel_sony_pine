@@ -13,7 +13,7 @@
 
 #ifndef __LINUX_RT1711_H
 #define __LINUX_RT1711_H
-#include "inc/pd_dbg_info.h"
+#include "pd_dbg_info.h"
 
 /*show debug message or not */
 #define ENABLE_RT1711_DBG	0

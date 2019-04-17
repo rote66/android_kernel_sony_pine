@@ -1,0 +1,7 @@
+lcm_gpio.c:108:1:_lcm_gpio_driver_init	16	static
+lcm_gpio.c:167:12:_lcm_gpio_remove	32	static
+lcm_gpio.c:179:19:_lcm_gpio_init	16	static
+lcm_gpio.c:115:12:_lcm_gpio_probe	80	static
+lcm_gpio.c:108:1:_lcm_gpio_driver_exit	16	static
+lcm_gpio.c:191:20:_lcm_gpio_exit	16	static
+lcm_gpio.c:253:12:lcm_gpio_set_data	48	static

@@ -1,0 +1,11 @@
+p2p_scan.c:94:6:scanInvalidAllP2pClientDevice	0	static
+p2p_scan.c:108:6:scanRemoveInvalidP2pClientDevice	80	static
+p2p_scan.c:130:1:scanFindP2pDeviceDesc	64	static
+p2p_scan.c:62:1:scanSearchTargetP2pDesc	64	static
+p2p_scan.c:176:21:scanGetP2pDeviceDesc	32	static
+p2p_scan.c:425:13:scanSendDeviceDiscoverEvent	160	static
+p2p_scan.c:603:1:scanP2pProcessBeaconAndProbeResp	80	static
+p2p_scan.c:658:6:scnEventReturnChannel	64	static
+p2p_scan.c:674:6:scanRemoveAllP2pBssDesc	32	static
+p2p_scan.c:690:6:scanRemoveP2pBssDesc	0	static
+p2p_scan.c:697:1:scanP2pSearchDesc	80	static

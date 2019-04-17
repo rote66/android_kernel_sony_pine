@@ -1,0 +1,7 @@
+api.c:20:5:mobicore_map_vmem	32	static
+api.c:37:5:mobicore_unmap_vmem	16	static
+api.c:51:5:mobicore_free_wsm	16	static
+api.c:68:5:mobicore_allocate_wsm	64	static
+api.c:88:21:mobicore_open	16	static
+api.c:102:5:mobicore_release	16	static
+api.c:113:6:mobicore_sleep_ready	16	static

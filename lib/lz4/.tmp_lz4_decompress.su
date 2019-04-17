@@ -1,0 +1,2 @@
+lz4_decompress.c:303:5:lz4_decompress	48	static
+lz4_decompress.c:322:5:lz4_decompress_unknownoutputsize	48	static

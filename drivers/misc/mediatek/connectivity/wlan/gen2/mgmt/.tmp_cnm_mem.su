@@ -1,0 +1,16 @@
+cnm_mem.c:194:6:cnmMemInit	0	static
+cnm_mem.c:231:7:cnmMemAlloc	112	static
+cnm_mem.c:74:15:cnmMgtPktAlloc	96	static
+cnm_mem.c:337:6:cnmMemFree	80	static
+cnm_mem.c:162:6:cnmMgtPktFree	64	static
+cnm_mem.c:417:6:cnmStaRecInit	0	static
+cnm_mem.c:462:16:cnmStaRecAlloc	80	static
+cnm_mem.c:522:6:cnmStaRecFree	96	static
+cnm_mem.c:440:6:cnmStaRecUninit	48	static
+cnm_mem.c:560:6:cnmStaFreeAllStaByNetType	64	static
+cnm_mem.c:582:16:cnmGetStaRecByIndex	32	static
+cnm_mem.c:758:13:cnmStaRecHandleEventPkt	48	static
+cnm_mem.c:605:16:cnmGetStaRecByAddress	64	static
+cnm_mem.c:636:6:cnmStaRecResetStatus	16	static
+cnm_mem.c:679:6:cnmStaRecChangeState	80	static
+cnm_mem.c:727:1:cnmStaTheTypeGet	0	static
