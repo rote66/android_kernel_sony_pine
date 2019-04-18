@@ -1,0 +1,11 @@
+cleancache.c:183:12:cleancache_get_key	32	static
+cleancache.c:112:24:cleancache_register_ops	80	static
+cleancache.c:138:6:__cleancache_init_fs	48	static
+cleancache.c:158:6:__cleancache_init_shared_fs	64	static
+cleancache.c:364:6:__cleancache_invalidate_fs	48	static
+cleancache.c:207:12:get_poolid_from_fake	0	static
+cleancache.c:228:5:__cleancache_get_page	144	static
+cleancache.c:271:6:__cleancache_put_page	128	static
+cleancache.c:305:6:__cleancache_invalidate_page	128	static
+cleancache.c:340:6:__cleancache_invalidate_inode	112	static
+cleancache.c:388:19:init_cleancache	32	static

@@ -1,5 +1,5 @@
 mlog_logger.c:180:13:mlog_emit_32	0	static
-mlog_logger.c:557:13:mlog_vmstat	480	static
+mlog_logger.c:557:13:mlog_vmstat	496	static
 mlog_logger.c:1013:20:mlog_exit	32	static
 mlog_logger.c:203:13:mlog_reset_format	96	static
 mlog_logger.c:1037:12:do_time_intval_handler	32	static

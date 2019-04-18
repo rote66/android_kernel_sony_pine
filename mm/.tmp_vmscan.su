@@ -51,7 +51,8 @@ vmscan.h:230:1:ftrace_define_fields_mm_shrink_slab_end	48	static
 vmscan.h:267:1:ftrace_define_fields_mm_vmscan_lru_isolate_template	48	static
 vmscan.h:331:1:ftrace_define_fields_mm_vmscan_writepage	32	static
 vmscan.h:354:1:ftrace_define_fields_mm_vmscan_lru_shrink_inactive	48	static
-vmscan.c:3092:13:zone_balanced	32	static
+vmscan.c:3092:13:zone_balanced	48	static
+vmscan.c:2223:21:alloc_movable_target	16	static
 vmscan.c:1837:12:inactive_anon_is_low	16	static
 vmscan.c:3766:12:cpu_callback	32	static
 vmscan.c:176:6:zone_reclaimable	32	static
@@ -59,7 +60,7 @@ vmscan.c:3143:13:pgdat_balanced	96	static
 vmscan.c:407:15:shrink_slab	80	static
 vmscan.c:667:5:remove_mapping	32	static
 vmscan.c:1228:5:__isolate_lru_page	48	static
-vmscan.c:1312:22:isolate_lru_pages.isra.46	112	static
+vmscan.c:1312:22:isolate_lru_pages.isra.48	112	static
 vmscan.c:1379:5:isolate_lru_page	48	static
 vmscan.c:3689:6:wakeup_kswapd	64	static
 vmscan.c:3790:5:kswapd_run	48	static
@@ -72,7 +73,7 @@ vmscan.c:1190:15:reclaim_clean_pages_from_list	208	static
 vmscan.c:1441:1:putback_inactive_pages	112	static
 vmscan.c:1513:1:shrink_inactive_list	192	static
 vmscan.c:1716:13:shrink_active_list	208	static
-vmscan.c:2327:13:shrink_lruvec.isra.49	256	static
+vmscan.c:2327:13:shrink_lruvec.isra.51	288	static
 vmscan.c:2522:13:shrink_zone	112	static
 vmscan.c:2766:22:do_try_to_free_pages	192	static
 vmscan.c:2960:15:try_to_free_pages	144	static

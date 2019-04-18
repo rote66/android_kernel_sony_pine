@@ -253,7 +253,7 @@ super.c:883:22:ext4_alloc_inode	32	static
 super.c:1878:12:options_open_fs	32	static
 super.c:1867:12:options_seq_show	32	static
 super.c:952:13:init_once	32	static
-super.c:131:15:ext4_superblock_csum.part.104	16	static
+super.c:131:15:ext4_superblock_csum.part.103	16	static
 super.c:131:15:ext4_superblock_csum	224	dynamic,bounded
 super.c:924:12:ext4_drop_inode	48	static
 ext4.h:78:1:ftrace_define_fields_ext4_free_inode	32	static
@@ -360,7 +360,7 @@ super.c:4592:12:ext4_commit_super	96	static
 super.c:333:13:save_error_info	32	static
 super.c:4831:12:ext4_unfreeze	16	static
 super.c:4793:12:ext4_freeze	48	static
-super.c:4666:13:ext4_mark_recovery_complete.isra.190	32	static
+super.c:4666:13:ext4_mark_recovery_complete.isra.189	32	static
 super.c:391:13:ext4_handle_error	32	static
 super.c:425:6:__ext4_error	144	static
 super.c:2590:16:trigger_test_error	64	static
@@ -374,7 +374,7 @@ super.c:2853:13:print_daily_error_info	48	static
 super.c:1673:12:parse_options	208	static
 super.c:2795:12:ext4_feature_set_ok	16	static
 super.c:631:6:__ext4_warning	144	static
-super.c:4694:13:ext4_clear_journal_err.isra.194	64	static
+super.c:4694:13:ext4_clear_journal_err.isra.193	64	static
 super.c:649:6:__ext4_grp_locked_error	144	static
 super.c:701:6:ext4_update_dynamic_rev	32	static
 super.c:1891:12:ext4_setup_super	64	static

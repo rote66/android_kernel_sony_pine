@@ -1,0 +1,6 @@
+single_cma.c:119:12:zmc_memory_init	32	static
+single_cma.c:251:19:zmc_resize	112	static
+single_cma.c:40:6:zmc_check_registions	0	static
+single_cma.c:61:13:zmc_shrink_cma_range	80	static
+single_cma.c:157:14:zmc_cma_alloc	48	static
+single_cma.c:199:6:zmc_cma_release	16	static

@@ -1,0 +1,13 @@
+frontswap.c:146:6:frontswap_writethrough	0	static
+frontswap.c:155:6:frontswap_tmem_exclusive_gets	0	static
+frontswap.c:191:6:__frontswap_test	0	static
+frontswap.c:118:23:frontswap_register_ops	64	static
+frontswap.c:264:5:__frontswap_load	64	static
+frontswap.c:216:5:__frontswap_store	96	static
+frontswap.c:441:19:init_frontswap	32	static
+frontswap.c:294:6:__frontswap_invalidate_page	48	static
+frontswap.c:330:22:__frontswap_curr_pages	16	static
+frontswap.c:429:15:frontswap_curr_pages	32	static
+frontswap.c:405:6:frontswap_shrink	96	static
+frontswap.c:164:6:__frontswap_init	16	static
+frontswap.c:314:6:__frontswap_invalidate_area	48	static

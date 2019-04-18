@@ -1,0 +1,15 @@
+zswap.c:239:28:zswap_rb_search	0	static
+zswap.c:111:12:zswap_comp_op	64	static
+zswap.c:823:13:zswap_frontswap_init	32	static
+zswap.c:342:12:__zswap_cpu_notifier.part.8	48	static
+zswap.c:342:12:__zswap_cpu_notifier	48	static
+zswap.c:381:12:zswap_cpu_notifier	16	static
+zswap.c:901:19:init_zswap	96	static
+zswap.c:295:13:zswap_free_entry	32	static
+zswap.c:801:13:zswap_frontswap_invalidate_area	64	static
+zswap.c:312:13:zswap_entry_put	32	static
+zswap.c:640:12:zswap_frontswap_store	96	static
+zswap.c:533:12:zswap_writeback_entry	176	static
+zswap.c:777:13:zswap_frontswap_invalidate_page	64	static
+zswap.c:739:12:zswap_frontswap_load	96	static
+zswap.c:885:20:zswap_debugfs_exit	16	static

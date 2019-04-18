@@ -1,0 +1,15 @@
+cma.c:165:19:cma_init_reserved_areas	144	static
+cma.c:599:19:cma_debug_init	16	static
+cma.c:584:12:cma_usage_open	16	static
+cma.c:575:12:cma_usage_show	16	static
+cma.c:111:13:cma_clear_bitmap	48	static
+cma.c:53:13:cma_get_base	0	static
+cma.c:58:15:cma_get_size	0	static
+cma.c:64:6:cma_get_range	0	static
+cma.c:87:6:cma_resize_front	0	static
+cma.c:189:12:cma_init_reserved_mem	64	static
+cma.c:246:12:cma_declare_contiguous	96	static
+cma.c:366:5:cma_alloc_range_ok	32	static
+cma.c:392:14:cma_alloc	112	static
+cma.c:466:6:cma_release	48	static
+cma.c:539:14:cma_alloc_large	96	static

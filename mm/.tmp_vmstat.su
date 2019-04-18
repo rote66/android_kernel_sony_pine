@@ -26,7 +26,7 @@ vmstat.c:700:14:frag_next	16	static
 vmstat.c:688:14:frag_start	32	static
 vmstat.c:1239:13:vmstat_stop	32	static
 vmstat.c:1188:14:vmstat_start	48	static
-vmstat.c:981:13:pagetypeinfo_showblockcount_print	112	static
+vmstat.c:981:13:pagetypeinfo_showblockcount_print	128	static
 vmstat.c:1336:13:vmstat_shepherd	112	static
 vmstat.c:458:12:refresh_cpu_vm_stats	176	static
 vmstat.c:1427:19:setup_vmstat	80	static
