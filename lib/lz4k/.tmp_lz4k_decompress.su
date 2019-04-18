@@ -1,0 +1,3 @@
+lz4k_decompress.c:119:12:lz4k_decompress_simple	0	static
+lz4k_decompress.c:485:5:lz4k_decompress_safe	16	static
+lz4k_decompress.c:504:5:lz4k_decompress_ubifs	16	static

@@ -10,7 +10,7 @@ usb20.c:1158:12:mt_usb_init	112	static
 usb20.c:1267:12:mt_usb_probe	96	static
 usb20.c:1521:20:usb20_exit	32	static
 usb20.c:843:16:mt_usb_store_saving_mode	64	static
-usb20.c:760:16:mt_usb_store_cmode	80	static
+usb20.c:760:16:mt_usb_store_cmode	96	static
 usb20.c:751:16:mt_usb_show_cmode	32	static
 usb20.c:834:16:mt_usb_show_saving_mode	32	static
 usb20.c:703:20:mt_usb_interrupt	160	static

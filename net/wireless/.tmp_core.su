@@ -4,7 +4,7 @@ core.c:310:13:cfg80211_sched_scan_stop_wk	32	static
 core.c:326:15:wiphy_new	48	static
 core.c:696:6:wiphy_unregister	96	static
 core.c:765:6:wiphy_free	16	static
-core.c:863:6:cfg80211_stop_iface	48	static
+core.c:863:6:cfg80211_stop_iface	64	static
 core.c:1083:19:cfg80211_init	48	static
 core.c:1132:20:cfg80211_exit	32	static
 core.c:677:6:wiphy_rfkill_start_polling	16	static

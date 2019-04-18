@@ -12,12 +12,12 @@ task_mmu.c:187:14:m_start	64	static
 task_mmu.c:1184:12:pagemap_pte_range	128	static
 task_mmu.c:258:12:proc_maps_open.constprop	48	static
 task_mmu.c:813:12:tid_smaps_open	16	static
-task_mmu.c:623:12:smaps_pte_range	96	static
+task_mmu.c:623:12:smaps_pte_range	112	static
 task_mmu.c:447:12:pid_maps_open	16	static
 task_mmu.c:452:12:tid_maps_open	16	static
 task_mmu.c:808:12:pid_smaps_open	16	static
 task_mmu.c:428:12:show_tid_map	32	static
-task_mmu.c:706:12:show_smap	320	static
+task_mmu.c:706:12:show_smap	352	static
 task_mmu.c:784:12:show_pid_smap	16	static
 task_mmu.c:789:12:show_tid_smap	16	static
 task_mmu.c:246:13:m_stop	32	static

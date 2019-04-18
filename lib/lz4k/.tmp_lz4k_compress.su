@@ -1,0 +1,2 @@
+lz4k_compress.c:565:5:lz4k_compress_zram	64	static
+lz4k_compress.c:584:5:lz4k_compress	64	static

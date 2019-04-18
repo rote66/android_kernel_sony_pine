@@ -15,7 +15,7 @@ dm.c:1917:5:dm_underlying_device_busy	16	static
 dm.c:422:13:dm_blk_close	48	static
 dm.c:2648:13:dm_queue_flush	32	static
 dm.c:2905:6:dm_internal_resume	32	static
-dm.c:840:13:dec_pending	96	static
+dm.c:840:13:dec_pending	80	static
 dm.c:1303:13:__map_bio	64	static
 dm.c:1589:12:dm_merge_bvec	64	static
 dm.c:508:12:dm_blk_ioctl	64	static

@@ -13,7 +13,7 @@ swapfile.c:1861:13:destroy_swap_extents	32	static
 swapfile.c:2304:12:swaps_open	32	static
 swapfile.c:2274:12:swap_show	48	static
 swapfile.c:2326:19:procswaps_init	16	static
-swapfile.c:3106:13:swap_count_continued.isra.35	112	static
+swapfile.c:3106:13:swap_count_continued.isra.34	112	static
 swapfile.c:953:22:swap_entry_free	64	static
 swapfile.c:2848:12:__swap_duplicate	80	static
 swapfile.c:290:13:swap_do_scheduled_discard	112	static
@@ -30,8 +30,8 @@ swapfile.c:1076:5:swp_swapcount	96	static
 swapfile.c:1120:5:reuse_swap_page	32	static
 swapfile.c:1142:5:try_to_free_swap	32	static
 swapfile.c:489:22:scan_swap_map	112	static
-swapfile.c:766:13:get_swap_page	112	static
-swapfile.c:760:13:get_swap_page_by_state	16	static
+swapfile.c:677:13:get_swap_page_by_state	112	static
+swapfile.c:766:13:get_swap_page	96	static
 swapfile.c:831:13:get_swap_page_of_type	48	static
 swapfile.c:856:6:get_swap_range_of_type	96	static
 swapfile.c:1180:5:free_swap_and_cache	48	static

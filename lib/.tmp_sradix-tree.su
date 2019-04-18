@@ -1,0 +1,7 @@
+sradix-tree.c:18:12:sradix_tree_extend	64	static
+sradix-tree.c:69:7:sradix_tree_next	80	static
+sradix-tree.c:133:5:sradix_tree_enter	112	static
+sradix-tree.c:275:6:sradix_tree_delete_from_leaf	64	static
+sradix-tree.c:333:7:sradix_tree_lookup	0	static
+sradix-tree.c:362:7:sradix_tree_lookup_create	64	static
+sradix-tree.c:447:5:sradix_tree_delete	16	static
