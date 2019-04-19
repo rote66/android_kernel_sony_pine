@@ -1,7 +1,0 @@
-powerkey_forcecrash.c:29:13:forcecrash_timeout	0	static
-powerkey_forcecrash.c:117:13:powerkey_input_disconnect	32	static
-powerkey_forcecrash.c:86:12:powerkey_input_connect	48	static
-powerkey_forcecrash.c:52:13:powerkey_input_event	32	static
-powerkey_forcecrash.c:152:20:powerkey_forcecrash_exit	32	static
-powerkey_forcecrash.c:143:19:powerkey_forcecrash_init	32	static
-powerkey_forcecrash.c:69:13:powerkey_input_match	48	static

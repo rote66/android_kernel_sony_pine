@@ -1,3 +1,0 @@
-timerqueue.c:39:6:timerqueue_add	48	static
-timerqueue.c:97:25:timerqueue_iterate_next	16	static
-timerqueue.c:72:6:timerqueue_del	48	static

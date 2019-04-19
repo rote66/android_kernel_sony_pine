@@ -1,3 +1,0 @@
-uptime.c:35:12:uptime_proc_open	16	static
-uptime.c:10:12:uptime_proc_show	64	static
-uptime.c:47:19:proc_uptime_init	16	static

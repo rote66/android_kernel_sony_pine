@@ -1,3 +1,0 @@
-dynamic_queue_limits.c:115:6:dql_reset	0	static
-dynamic_queue_limits.c:130:5:dql_init	16	static
-dynamic_queue_limits.c:17:6:dql_completed	16	static

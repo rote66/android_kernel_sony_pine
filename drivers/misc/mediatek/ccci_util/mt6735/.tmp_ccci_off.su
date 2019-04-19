@@ -1,5 +1,0 @@
-ccci_off.c:432:12:ccci_off_remove	0	static
-ccci_off.c:375:12:modem_power_down_worker	176	static
-ccci_off.c:456:19:ccci_off_init	16	static
-ccci_off.c:402:5:ccci_md_off	32	static
-ccci_off.c:418:12:ccci_off_probe	32	static

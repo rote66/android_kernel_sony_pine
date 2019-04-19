@@ -1,2 +1,0 @@
-decompress_inflate.c:30:18:nofill	0	static
-decompress_inflate.c:36:17:gunzip	112	static

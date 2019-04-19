@@ -1,6 +1,0 @@
-focaltech_test.c:284:16:fts_test_show	0	static
-focaltech_test.c:145:12:fts_test_save_test_data.constprop	192	static
-focaltech_test.c:204:5:fts_test_entry	336	static
-focaltech_test.c:297:16:fts_test_store	176	static
-focaltech_test.c:331:5:fts_test_init	32	static
-focaltech_test.c:356:5:fts_test_exit	0	static

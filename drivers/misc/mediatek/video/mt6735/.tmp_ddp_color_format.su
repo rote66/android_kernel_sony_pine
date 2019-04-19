@@ -1,8 +1,0 @@
-ddp_color_format.c:32:5:fmt_bpp	0	static
-ddp_color_format.c:37:5:fmt_swap	0	static
-ddp_color_format.c:42:5:fmt_color_space	0	static
-ddp_color_format.c:47:5:fmt_is_yuv422	0	static
-ddp_color_format.c:52:5:fmt_is_yuv420	0	static
-ddp_color_format.c:57:5:fmt_hw_value	0	static
-ddp_color_format.c:62:7:fmt_string	32	static
-ddp_color_format.c:106:15:fmt_type	32	static

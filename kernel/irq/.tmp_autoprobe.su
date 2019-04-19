@@ -1,3 +1,0 @@
-autoprobe.c:31:15:probe_irq_on	64	static
-autoprobe.c:118:14:probe_irq_mask	80	static
-autoprobe.c:158:5:probe_irq_off	64	static

@@ -1,7 +1,0 @@
-nt35521s_hd720_dsi_vdo.c:389:21:lcm_compare_id	0	static
-nt35521s_hd720_dsi_vdo.c:245:13:lcm_get_params	32	static
-nt35521s_hd720_dsi_vdo.c:239:13:lcm_set_util_funcs	16	static
-nt35521s_hd720_dsi_vdo.c:210:13:push_table.constprop	48	static
-nt35521s_hd720_dsi_vdo.c:298:13:lcm_init	32	static
-nt35521s_hd720_dsi_vdo.c:338:13:lcm_resume	32	static
-nt35521s_hd720_dsi_vdo.c:316:13:lcm_suspend	48	static

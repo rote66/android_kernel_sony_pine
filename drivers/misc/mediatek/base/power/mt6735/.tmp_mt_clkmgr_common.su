@@ -1,2 +1,0 @@
-mt_clkmgr_common.c:16:5:enable_clock	0	static
-mt_clkmgr_common.c:23:5:disable_clock	0	static

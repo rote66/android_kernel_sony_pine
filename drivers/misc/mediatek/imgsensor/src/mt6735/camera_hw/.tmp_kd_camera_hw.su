@@ -1,3 +1,0 @@
-kd_camera_hw.c:61:5:mtkcam_gpio_init	48	static
-kd_camera_hw.c:147:5:mtkcam_gpio_set	48	static
-kd_camera_hw.c:195:5:kdCISModulePowerOn	160	static

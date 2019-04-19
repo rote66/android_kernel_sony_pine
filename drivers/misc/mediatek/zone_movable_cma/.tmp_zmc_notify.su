@@ -1,3 +1,0 @@
-zmc_notify.c:22:5:zmc_register_client	32	static
-zmc_notify.c:32:5:zmc_unregister_client	16	static
-zmc_notify.c:41:5:zmc_notifier_call_chain	16	static

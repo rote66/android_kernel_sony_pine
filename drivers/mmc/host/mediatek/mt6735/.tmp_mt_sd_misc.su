@@ -1,9 +1,0 @@
-mt_sd_misc.c:76:12:simple_sd_open	0	static
-mt_sd_misc.c:148:12:simple_sd_ioctl_multi_rw	992	static
-mt_sd_misc.c:365:12:simple_sd_ioctl_single_rw	864	static
-mt_sd_misc.c:627:12:simple_sd_ioctl_get_excsd	560	static
-mt_sd_misc.c:1182:20:simple_sd_exit	32	static
-mt_sd_misc.c:992:21:msdc_get_other_capacity	80	static
-mt_sd_misc.c:1066:13:simple_sd_ioctl	192	static
-mt_sd_misc.c:1165:19:simple_sd_init	32	static
-mt_sd_misc.c:555:5:simple_sd_ioctl_rw	16	static

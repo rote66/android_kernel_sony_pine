@@ -1,4 +1,0 @@
-zcomp_lz4k.c:21:13:zcomp_lz4k_destroy	16	static
-zcomp_lz4k.c:16:14:zcomp_lz4k_create	16	static
-zcomp_lz4k.c:40:12:zcomp_lz4k_decompress	32	static
-zcomp_lz4k.c:33:12:zcomp_lz4k_compress	16	static

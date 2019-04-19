@@ -1,9 +1,0 @@
-usb20_phy.c:426:13:usb_phy_savecurrent_internal	32	static
-usb20_phy.c:194:6:usb_enable_clock	112	static
-usb20_phy.c:375:6:usb_phy_poweron	32	static
-usb20_phy.c:524:6:usb_phy_savecurrent	16	static
-usb20_phy.c:539:6:usb_phy_recover	48	static
-usb20_phy.c:635:6:Charger_Detect_Init	48	static
-usb20_phy.c:660:6:Charger_Detect_Release	48	static
-usb20_phy.c:684:6:usb_phy_context_save	0	static
-usb20_phy.c:691:6:usb_phy_context_restore	16	static

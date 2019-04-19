@@ -1,9 +1,0 @@
-disp_helper.c:61:6:enable_screen_idle_switch_decouple	0	static
-disp_helper.c:65:6:disable_screen_idle_switch_decouple	0	static
-disp_helper.c:76:13:disp_helper_option_spy	0	static
-disp_helper.c:128:5:disp_helper_get_option	64	static
-disp_helper.c:116:6:disp_helper_set_option	64	static
-disp_helper.c:228:19:disp_helper_get_stage	0	static
-disp_helper.c:233:13:disp_helper_stage_spy	0	static
-disp_helper.c:245:6:disp_helper_option_init	16	static
-disp_helper.c:269:5:disp_helper_get_option_list	112	static

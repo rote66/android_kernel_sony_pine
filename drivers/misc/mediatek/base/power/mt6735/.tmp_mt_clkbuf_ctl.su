@@ -1,7 +1,0 @@
-mt_clkbuf_ctl.c:249:16:clk_buf_ctrl_show	96	static
-mt_clkbuf_ctl.c:151:13:spm_clk_buf_ctrl.constprop	16	static
-mt_clkbuf_ctl.c:98:13:clk_buf_Send_BSI_CW.constprop	16	static
-mt_clkbuf_ctl.c:227:16:clk_buf_ctrl_store	80	static
-mt_clkbuf_ctl.c:171:6:clk_buf_ctrl	80	static
-mt_clkbuf_ctl.c:219:6:clk_buf_get_swctrl_status	0	static
-mt_clkbuf_ctl.c:308:6:clk_buf_init	16	static

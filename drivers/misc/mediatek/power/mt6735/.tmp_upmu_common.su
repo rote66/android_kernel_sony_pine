@@ -1,8 +1,0 @@
-upmu_common.c:5488:16:mt6328_set_register_value	16	static
-upmu_common.c:5508:16:mt6328_get_register_value	32	static
-upmu_common.c:5521:16:mt6328_get_register_value_nolock	32	static
-upmu_common.c:5535:16:pmic_set_register_value	16	static
-upmu_common.c:5541:16:pmic_get_register_value	16	static
-upmu_common.c:5547:16:pmic_get_register_value_nolock	16	static
-upmu_common.c:5552:16:bc11_set_register_value	16	static
-upmu_common.c:5558:16:bc11_get_register_value	16	static

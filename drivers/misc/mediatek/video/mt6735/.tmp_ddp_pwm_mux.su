@@ -1,3 +1,0 @@
-ddp_pwm_mux.c:124:5:disp_pwm_set_pwmmux	64	static
-ddp_pwm_mux.c:154:5:disp_pwm_clksource_enable	0	static
-ddp_pwm_mux.c:159:5:disp_pwm_clksource_disable	0	static

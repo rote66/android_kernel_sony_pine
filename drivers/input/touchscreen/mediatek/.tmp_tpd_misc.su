@@ -1,4 +1,0 @@
-tpd_misc.c:30:6:tpd_switch_single_mode	0	static
-tpd_misc.c:39:6:tpd_switch_multiple_mode	0	static
-tpd_misc.c:48:6:tpd_switch_sleep_mode	0	static
-tpd_misc.c:57:6:tpd_switch_normal_mode	0	static

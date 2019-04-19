@@ -1,3 +1,0 @@
-ddp_met.c:104:13:ddp_inout_info_tag	272	static
-ddp_met.c:177:13:met_irq_handler	112	static
-ddp_met.c:215:6:ddp_init_met_tag	32	static

@@ -1,5 +1,0 @@
-focaltech_ctl.c:235:12:fts_rw_iic_drv_open	0	static
-focaltech_ctl.c:248:12:fts_rw_iic_drv_release	0	static
-focaltech_ctl.c:261:13:fts_rw_iic_drv_ioctl	144	static
-focaltech_ctl.c:381:5:fts_rw_iic_drv_init	96	static
-focaltech_ctl.c:394:7:fts_rw_iic_drv_exit	48	static

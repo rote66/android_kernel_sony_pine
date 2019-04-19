@@ -1,2 +1,0 @@
-lz4_compress.c:817:5:lz4_compress	96	static
-lz4_compress.c:840:5:lz4_compress_zram	96	static

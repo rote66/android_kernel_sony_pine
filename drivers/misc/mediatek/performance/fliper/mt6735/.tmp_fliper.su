@@ -1,9 +1,0 @@
-fliper.c:234:13:mt_power_pef_transfer	32	static
-fliper.c:131:12:mt_fliper_open	16	static
-fliper.c:123:12:mt_fliper_show	32	static
-fliper.c:332:19:init_fliper	80	static
-fliper.c:295:12:fliper_fb_notifier_callback	32	static
-fliper.c:169:13:mt_power_pef_transfer_work	48	static
-fliper.c:207:5:fliper_set_bw	32	static
-fliper.c:218:5:fliper_restore_bw	32	static
-fliper.c:68:16:mt_fliper_write	112	static

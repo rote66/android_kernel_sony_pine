@@ -1,3 +1,0 @@
-secwidevine.c:292:12:secwidevine_release	64	static
-secwidevine.c:364:19:secwidevine_init	16	static
-secwidevine.c:282:12:secwidevine_open	64	static

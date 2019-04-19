@@ -1,8 +1,0 @@
-tcpc_usb_cb.c:36:12:trigger_driver	48	static
-tcpc_usb_cb.c:92:12:usb_tcp_notifier_call	32	static
-tcpc_usb_cb.c:136:5:register_typec_switch_callback	64	static
-tcpc_usb_cb.c:248:20:tcpc_usb_cb_exit	16	static
-tcpc_usb_cb.c:222:12:tcpc_usb_cb_remove	16	static
-tcpc_usb_cb.c:210:12:tcpc_usb_cb_probe	32	static
-tcpc_usb_cb.c:243:19:tcpc_usb_cb_init	16	static
-tcpc_usb_cb.c:194:5:unregister_typec_switch_callback	32	static

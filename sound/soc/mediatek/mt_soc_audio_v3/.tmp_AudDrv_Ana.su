@@ -1,3 +1,0 @@
-AudDrv_Ana.c:91:8:Ana_Get_Reg	32	static
-AudDrv_Ana.c:66:6:Ana_Set_Reg	64	static
-AudDrv_Ana.c:104:6:Ana_Log_Print	32	static

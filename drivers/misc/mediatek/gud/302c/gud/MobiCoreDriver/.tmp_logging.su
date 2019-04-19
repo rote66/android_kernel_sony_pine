@@ -1,6 +1,0 @@
-logging.c:72:13:log_eol.isra.0	32	static
-logging.c:100:13:log_char	48	static
-logging.c:217:12:log_worker	160	static
-logging.c:267:6:mobicore_log_read	32	static
-logging.c:287:6:mobicore_log_setup	80	static
-logging.c:376:6:mobicore_log_free	32	static

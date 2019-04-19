@@ -1,3 +1,0 @@
-pinctrl-mt6735.c:348:19:mtk_pinctrl_init	16	static
-pinctrl-mt6735.c:325:12:mt6735_pinctrl_probe	32	static
-pinctrl-mt6735.c:131:12:spec_pull_set	64	static

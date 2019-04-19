@@ -1,5 +1,0 @@
-mtk_config_platform.c:79:12:pm_callback_power_on	32	static
-mtk_config_platform.c:186:13:pm_callback_power_off	64	static
-mtk_config_platform.c:322:31:kbase_get_platform_config	0	static
-mtk_config_platform.c:328:5:kbase_platform_early_init	0	static
-mtk_config_platform.c:408:5:mtk_platform_init	64	static

@@ -1,5 +1,0 @@
-qosmap.c:95:6:QosMapSetRelease	16	static
-qosmap.c:148:22:qosParseQosMapSet	80	static
-qosmap.c:125:5:qosHandleQosMapConfigure	48	static
-qosmap.c:100:6:handleQosMapConf	48	static
-qosmap.c:197:8:getUpFromDscp	32	static

@@ -1,2 +1,0 @@
-dump.c:70:6:dumpMemory8	160	static
-dump.c:201:6:dumpMemory32	64	static

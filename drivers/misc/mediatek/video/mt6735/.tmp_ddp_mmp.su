@@ -1,8 +1,0 @@
-ddp_mmp.c:27:6:init_ddp_mmp_events	64	static
-ddp_mmp.c:304:6:_ddp_mmp_ovl_not_raw_under_session	32	static
-ddp_mmp.c:326:6:_ddp_mmp_ovl_raw_under_session	32	static
-ddp_mmp.c:349:6:ddp_mmp_ovl_layer	160	static
-ddp_mmp.c:439:6:ddp_mmp_wdma_layer	128	static
-ddp_mmp.c:504:6:ddp_mmp_rdma_layer	128	static
-ddp_mmp.c:572:19:ddp_mmp_get_events	0	static
-ddp_mmp.c:577:6:ddp_mmp_init	16	static

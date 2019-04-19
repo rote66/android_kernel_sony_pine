@@ -1,6 +1,0 @@
-pmic_auxadc.c:86:6:pmic_auxadc_init	32	static
-pmic_auxadc.c:101:6:pmic_auxadc_lock	16	static
-pmic_auxadc.c:107:6:pmic_auxadc_unlock	16	static
-pmic_auxadc.c:113:12:PMIC_IMM_GetCurrent	48	static
-pmic_auxadc.c:173:14:PMIC_IMM_GetOneChannelValue	48	static
-pmic_auxadc.c:464:14:PMIC_IMM_GetOneChannelValueMD	48	static

@@ -1,5 +1,0 @@
-musb_virthub.c:111:13:musb_port_reset	96	static
-musb_virthub.c:48:13:musb_port_suspend	112	static
-musb_virthub.c:173:6:musb_root_disconnect	64	static
-musb_virthub.c:219:5:musb_hub_status_data	0	static
-musb_virthub.c:232:5:musb_hub_control	112	static

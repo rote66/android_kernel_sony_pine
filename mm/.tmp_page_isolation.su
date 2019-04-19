@@ -1,6 +1,0 @@
-page_isolation.c:12:5:set_migratetype_isolate	64	static
-page_isolation.c:75:6:unset_migratetype_isolate	96	static
-page_isolation.c:156:5:start_isolate_page_range	80	static
-page_isolation.c:189:5:undo_isolate_page_range	64	static
-page_isolation.c:261:5:test_pages_isolated	96	static
-page_isolation.c:291:14:alloc_migrate_target	16	static

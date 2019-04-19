@@ -1,4 +1,0 @@
-ddp_wdma.c:34:14:wdma_index	32	static
-ddp_wdma.c:52:5:wdma_stop	48	static
-ddp_wdma.c:63:5:wdma_reset	48	static
-ddp_wdma.c:87:14:ddp_wdma_get_cur_addr	0	static

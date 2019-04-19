@@ -1,5 +1,0 @@
-secwidevinemdw.c:311:12:secwidevinemdw_release	64	static
-secwidevinemdw.c:140:12:secwidevinemdw_listenDci	80	static
-secwidevinemdw.c:319:16:secwidevinemdw_read	48	static
-secwidevinemdw.c:346:19:secwidevinemdw_init	32	static
-secwidevinemdw.c:301:12:secwidevinemdw_open	80	static
