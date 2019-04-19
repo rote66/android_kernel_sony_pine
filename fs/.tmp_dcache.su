@@ -10,7 +10,7 @@ dcache.c:287:6:release_dentry_name_snapshot	16	static
 dcache.c:471:6:__d_drop	48	static
 dcache.c:494:6:d_drop	32	static
 dcache.c:1610:13:__d_instantiate	48	static
-dcache.c:2384:6:dentry_update_name_case	48	static
+dcache.c:2383:6:dentry_update_name_case	48	static
 dcache.c:440:13:d_lru_shrink_move	48	static
 dcache.c:418:13:d_shrink_add	48	static
 dcache.c:1553:6:d_set_d_op	48	static
@@ -29,7 +29,7 @@ dcache.c:3297:19:set_dhash_entries	32	static
 dcache.c:3260:24:d_genocide_kill	0	static
 dcache.c:1368:13:check_and_drop	16	static
 dcache.c:2341:13:__d_rehash	48	static
-dcache.c:2362:6:d_rehash	32	static
+dcache.c:2361:6:d_rehash	32	static
 dcache.c:1301:24:umount_check	16	static
 dcache.c:402:13:d_lru_del	32	static
 dcache.c:1247:24:select_collect	48	static
@@ -66,7 +66,7 @@ dcache.c:2162:16:__d_lookup	96	static
 dcache.c:2132:16:d_lookup	64	static
 dcache.c:2240:16:d_hash_and_lookup	32	static
 dcache.c:2628:16:d_ancestor	0	static
-dcache.c:2522:13:__d_move	96	static
+dcache.c:2521:13:__d_move	96	static
 dcache.c:2593:6:d_move	64	static
 dcache.c:2606:6:d_exchange	48	static
 dcache.c:2700:16:d_splice_alias	80	static
