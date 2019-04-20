@@ -2,7 +2,7 @@
 # Makefile for the kernel block layer
 #
 
-subdir-ccflags-y += -Werror
+#subdir-ccflags-y += -Werror
 
 obj-$(CONFIG_BLOCK) := bio.o elevator.o blk-core.o blk-tag.o blk-sysfs.o \
 			blk-flush.o blk-settings.o blk-ioc.o blk-map.o \
@@ -20,6 +20,14 @@ obj-$(CONFIG_BLK_DEV_THROTTLING)	+= blk-throttle.o
 obj-$(CONFIG_IOSCHED_NOOP)	+= noop-iosched.o
 obj-$(CONFIG_IOSCHED_DEADLINE)	+= deadline-iosched.o
 obj-$(CONFIG_IOSCHED_CFQ)	+= cfq-iosched.o
+obj-$(CONFIG_IOSCHED_SIO)	+= sio-iosched.o
+obj-$(CONFIG_IOSCHED_BFQ)       += bfq-iosched.o
+obj-$(CONFIG_IOSCHED_CFQ)	+= cfq-iosched.o
+obj-$(CONFIG_IOSCHED_ZEN)       += zen-iosched.o
+obj-$(CONFIG_IOSCHED_VR)	+= vr-iosched.o
+obj-$(CONFIG_IOSCHED_SIOPLUS)   += sioplus-iosched.o
+obj-$(CONFIG_IOSCHED_FIOPS)	+= fiops-iosched.o
+obj-$(CONFIG_IOSCHED_TRIPNDROID)        += tripndroid-iosched.o
 
 obj-$(CONFIG_BLOCK_COMPAT)	+= compat_ioctl.o
 obj-$(CONFIG_BLK_CMDLINE_PARSER)	+= cmdline-parser.o
