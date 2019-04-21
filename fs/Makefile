@@ -5,7 +5,7 @@
 # Rewritten to use lists instead of if-statements.
 #
 
-subdir-ccflags-y += -Werror
+#subdir-ccflags-y += -Werror
 
 obj-y :=	open.o read_write.o file_table.o super.o \
 		char_dev.o stat.o exec.o pipe.o namei.o fcntl.o \
@@ -47,6 +47,7 @@ obj-$(CONFIG_FS_POSIX_ACL)	+= posix_acl.o
 obj-$(CONFIG_NFS_COMMON)	+= nfs_common/
 obj-$(CONFIG_COREDUMP)		+= coredump.o
 obj-$(CONFIG_SYSCTL)		+= drop_caches.o
+obj-$(CONFIG_DYNAMIC_FSYNC)	+= dyn_sync_cntrl.o
 
 obj-$(CONFIG_FHANDLE)		+= fhandle.o
 

@@ -90,6 +90,15 @@ static void fdatawait_one_bdev(struct block_device *bdev, void *arg)
 }
 
 /*
+ * Sync all the data for all the filesystems (called by sys_sync() and
+ * emergency sync)
+ */
+void sync_filesystems(int wait)
+{
+	iterate_supers(sync_inodes_one_sb, &wait);
+}
+
+/*
  * Sync everything. We start by waking flusher threads so that most of
  * writeback runs on all devices in parallel. Then we sync all inodes reliably
  * which effectively also waits for all flusher threads to finish doing
@@ -99,6 +108,21 @@ static void fdatawait_one_bdev(struct block_device *bdev, void *arg)
  * just write metadata (such as inodes or bitmaps) to block device page cache
  * and do not sync it on their own in ->sync_fs().
  */
+ static void do_sync(void)
+{
+	wakeup_flusher_threads(0, WB_REASON_SYNC);
+	sync_filesystems(0);
+	sync_filesystems(1);
+	if (unlikely(laptop_mode))
+	laptop_sync_completion();
+	return;
+}
+
+static DEFINE_MUTEX(sync_mutex);	/* One do_sync() at a time. */
+static unsigned long sync_seq;		/* Many sync()s from one do_sync(). */
+					/*  Overflow harmless, extra wait. */
+					
+					
 SYSCALL_DEFINE0(sync)
 {
 	int nowait = 0, wait = 1;
