@@ -1,0 +1,9 @@
+#!/bin/sh
+make clean -k -i
+make mrproper -k -i
+find -name ".*.su" | xargs rm -f
+#rm .*.su
+#rm build.log
+rm -f arch/arm64/boot/Image.gz-dtb
+rm -f repack_zip/emp/zImage
+echo "done"
