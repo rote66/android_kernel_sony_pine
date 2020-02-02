@@ -11657,6 +11657,7 @@ BMA4XY_RETURN_TYPE bma4xy_setup_fifo(enum bma4xy_fifo_setup sensor_type,
 		if (fifo_enable == BMA4XY_DISABLE)
 			com_rslt += bma4xy_set_fifo_accel_enable(
 							FIFO_ACCEL_ENABLE);
+            {
 
 			/* check if mag is enabled for fifo*/
 			com_rslt += bma4xy_get_fifo_mag_enable(&fifo_enable);
@@ -11664,6 +11665,7 @@ BMA4XY_RETURN_TYPE bma4xy_setup_fifo(enum bma4xy_fifo_setup sensor_type,
 			if (fifo_enable == BMA4XY_DISABLE)
 				com_rslt += bma4xy_set_fifo_mag_enable(
 							FIFO_MAG_ENABLE);
+            }
 
 	break;
 		}

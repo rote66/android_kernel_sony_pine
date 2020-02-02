@@ -1970,7 +1970,9 @@ UINT_8 nicChannelNum2Index(IN UINT_8 ucChannelNum)
 		ucChannelNum = ucChannelNum - 1;
 		ucindex = (ucChannelNum >> 2) - 2;
 	} else
-		ucindex = 0;
+    {
+        ucindex = 0;
+    }
 
 		return ucindex;
 }
