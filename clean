@@ -6,4 +6,5 @@ find -name ".*.su" | xargs rm -f
 #rm build.log
 rm -f arch/arm64/boot/Image.gz-dtb
 rm -f repack_zip/emp/zImage
+rm -f G3311_EMP_Kernel_Beta.zip
 echo "done"
