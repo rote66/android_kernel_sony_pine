@@ -92,6 +92,8 @@ static int rps_sock_flow_sysctl(struct ctl_table *table, int write,
 }
 #endif /* CONFIG_RPS */
 
+extern int randomize_mac;
+
 #ifdef CONFIG_NET_FLOW_LIMIT
 static DEFINE_MUTEX(flow_limit_update_mutex);
 
@@ -218,6 +220,14 @@ static int set_default_qdisc(struct ctl_table *table, int write,
 
 static struct ctl_table net_core_table[] = {
 #ifdef CONFIG_NET
+	{
+        .procname	= "randomize_mac",
+		.data		= &randomize_mac,
+		.maxlen		= sizeof(int),
+		.mode		= 0644,
+		.proc_handler	= proc_dointvec
+	},
+
 	{
 		.procname	= "wmem_max",
 		.data		= &sysctl_wmem_max,
