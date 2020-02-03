@@ -7784,8 +7784,9 @@ static irqreturn_t msdc_irq(int irq, void *dev_id)
 		stop = data->stop;
 #if (MSDC_DATA1_INT == 1)
 	if ((host->hw->flags & MSDC_SDIO_IRQ) && (intsts & MSDC_INT_XFER_COMPL))
-		goto done;
+        goto done;
 	else
+    {
 #endif
 		if (intsts & MSDC_INT_XFER_COMPL) {
 			if ((stop != NULL) && (host->autocmd & MSDC_AUTOCMD12)) {
@@ -7793,6 +7794,7 @@ static irqreturn_t msdc_irq(int irq, void *dev_id)
 					sdr_read32(SDC_ACMD_RESP), cmd_arg, data->blocks);
 			}
 			goto done;
+        }
 		}
 
 		if (intsts & datsts) {

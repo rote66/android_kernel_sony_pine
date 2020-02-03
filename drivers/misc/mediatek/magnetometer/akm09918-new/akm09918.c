@@ -1633,9 +1633,11 @@ static ssize_t show_status_value(struct device_driver *ddri, char *buf)
 		len += snprintf(buf+len, PAGE_SIZE-len, "CUST: %d %d (%d %d)\n",
 		data->hw->i2c_num, data->hw->direction, data->hw->power_id, data->hw->power_vol);
 	else
+    {
 		len += snprintf(buf+len, PAGE_SIZE-len, "CUST: NULL\n");
 
 		len += snprintf(buf+len, PAGE_SIZE-len, "OPEN: %d\n", atomic_read(&dev_open_count));
+    }
 	return len;
 }
 /*----------------------------------------------------------------------------*/

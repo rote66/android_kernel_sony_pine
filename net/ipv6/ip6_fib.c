@@ -965,8 +965,10 @@ int fib6_add(struct fib6_node *root, struct rt6_info *rt, struct nl_info *info,
 	if (!err) {
 		fib6_start_gc(info->nl_net, rt);
 		if (!(rt->rt6i_flags & RTF_CACHE))
+        {
 			fib6_prune_clones(info->nl_net, pn);
 			rt->dst.flags &= ~DST_NOCACHE;
+        }
 	}
 
 out:
@@ -1004,7 +1006,9 @@ st_failure:
 	if (fn && !(fn->fn_flags & (RTN_RTINFO|RTN_ROOT)))
 		fib6_repair_tree(info->nl_net, fn);
 if (!(rt->dst.flags & DST_NOCACHE))
-	dst_free(&rt->dst);
+    {
+        dst_free(&rt->dst);
+    }
 	return err;
 #endif
 }

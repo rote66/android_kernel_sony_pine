@@ -110,11 +110,13 @@ static void control_msg_handler(struct ccci_port *port, struct sk_buff *skb)
 	case C2K_CCISM_SHM_INIT_ACK:
 	case C2K_FLOW_CTRL_MSG:
 	if (port->md_id == MD_SYS3)
+    {
 		ret = c2k_msg_handler(port, skb);
 		break;
 	default:
 		CCCI_ERROR_LOG(port->md_id, KERN, "receive unknown data from CCCI_CONTROL_RX = %d\n", ccci_h->data[1]);
 		break;
+    }
 	}
 	if (ret != 2)
 		ccci_free_skb(skb);

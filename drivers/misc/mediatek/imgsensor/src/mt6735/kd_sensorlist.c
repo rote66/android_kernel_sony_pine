@@ -2880,7 +2880,9 @@ bool _hwPowerOn(KD_REGULATOR_TYPE_T type, int powerVolt)
     } else if (type == VCAMAF) {
 	reg = regVCAMAF;
     } else
+    {
 	return ret;
+    }
 
 	if (!IS_ERR(reg)) {
 		if (regulator_set_voltage(reg , powerVolt, powerVolt) != 0) {
