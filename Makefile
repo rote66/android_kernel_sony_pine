@@ -408,9 +408,8 @@ KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
                    -mtune=cortex-a53 \
-           	   -march=armv8-a \
+		   -march=armv8-a \
 		   -std=gnu89
-
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
