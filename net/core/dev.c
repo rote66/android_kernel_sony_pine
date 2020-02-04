@@ -5788,8 +5788,8 @@ int dev_change_flags(struct net_device *dev, unsigned int flags)
 		unsigned int mac4;
 		unsigned short mac2;
 
-		mac4 = random32();
-		mac2 = random32();
+		mac4 = prandom_u32();
+		mac2 = prandom_u32();
 		memcpy(sa.sa_data, &mac4, sizeof(mac4));
 		memcpy((char *)sa.sa_data + sizeof(mac4), &mac2, sizeof(mac2));
 		if (!is_valid_ether_addr(sa.sa_data))
