@@ -320,6 +320,16 @@ u64 zpool_get_total_size(struct zpool *zpool)
 	return zpool->driver->total_size(zpool->pool);
 }
 
+unsigned long zpool_compact(struct zpool *zpool)
+{
+	return zpool->driver->compact(zpool->pool);
+}
+
+bool zpool_compactable(struct zpool *zpool, unsigned int pages)
+{
+	return zpool->driver->compactable(zpool->pool, pages);
+}
+
 static int __init init_zpool(void)
 {
 	pr_info("loaded\n");
