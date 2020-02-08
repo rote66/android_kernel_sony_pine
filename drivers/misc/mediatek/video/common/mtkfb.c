@@ -33,6 +33,7 @@
 #include <asm/cacheflush.h>
 #include <linux/io.h>
 #include <mt-plat/dma.h>
+#include <linux/display_state.h>
 #include <linux/compat.h>
 #include <linux/dma-mapping.h>
 #if defined(COMMON_DISP_LOG)
@@ -70,6 +71,11 @@
 
 #define ALIGN_TO(x, n)	(((x) + ((n) - 1)) & ~((n) - 1))
 
+bool display_on = true;
+bool is_display_on()
+{
+	return display_on;
+}
 
 /* xuecheng, remove this because we use session now */
 /* mtk_dispif_info_t dispif_info[MTKFB_MAX_DISPLAY_COUNT]; */
