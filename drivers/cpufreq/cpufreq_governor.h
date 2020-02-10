@@ -169,6 +169,8 @@ struct cs_cpu_dbs_info_s {
 	unsigned int down_skip;
 	unsigned int requested_freq;
 	unsigned int enable:1;
+	unsigned int twostep_counter;
+	u64 twostep_time;
 };
 
 struct ex_cpu_dbs_info_s {
@@ -190,6 +192,7 @@ struct zz_cpu_dbs_info_s {
 struct od_dbs_tuners {
 	unsigned int ignore_nice_load;
 	unsigned int sampling_rate;
+	unsigned int sampling_rate_min; // added pegasusq
 	unsigned int sampling_down_factor;
 	unsigned int up_threshold;
 	unsigned int powersave_bias;
@@ -199,10 +202,22 @@ struct od_dbs_tuners {
 struct cs_dbs_tuners {
 	unsigned int ignore_nice_load;
 	unsigned int sampling_rate;
+	unsigned int sampling_rate_min; // added pegasusq
 	unsigned int sampling_down_factor;
 	unsigned int up_threshold;
 	unsigned int down_threshold;
+	unsigned int down_threshold_suspended;
 	unsigned int freq_step;
+	unsigned int sleep_depth;
+	unsigned int boost_enabled;
+	unsigned int boost_count;
+	unsigned int boost_ceiling;
+	unsigned int input_boost_freq;
+	unsigned int input_boost_duration;
+	unsigned int twostep_threshold;
+	unsigned int min_load;
+	unsigned int twostep_counter;
+	u64 twostep_time;
 };
 
 struct ex_dbs_tuners {
@@ -269,6 +284,7 @@ struct dbs_data {
 		struct cpufreq_frequency_table *freq_table;
 	bool freq_table_desc;
  	unsigned int freq_table_size;
+	unsigned int zz_prev_load;                      // previous load saved by governor for afs calculation
  	unsigned int pol_min;
  	unsigned int pol_max;
  	unsigned int min_scaling_freq;
