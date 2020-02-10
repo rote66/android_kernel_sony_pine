@@ -9,6 +9,7 @@
  *              (C)  2003 Venkatesh Pallipadi <venkatesh.pallipadi@intel.com>.
  *                        Jun Nakajima <jun.nakajima@intel.com>
  *              (C)  2009 Alexander Clouter <alex@digriz.org.uk>
+ *              (C)  2014 LoungeKatt <twistedumbrella@gmail.com>
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -71,6 +72,7 @@ struct cpu_dbs_info_s {
 	struct mutex timer_mutex;
 };
 static DEFINE_PER_CPU(struct cpu_dbs_info_s, cs_cpu_dbs_info);
+static DEFINE_PER_CPU(struct cpu_dbs_info_s, cpuinfo);
 
 static unsigned int dbs_enable;	
 
@@ -266,7 +268,7 @@ static struct attribute *dbs_attributes[] = {
 
 static struct attribute_group dbs_attr_group = {
 	.attrs = dbs_attributes,
-	.name = "lionheart",
+	.name = "Lionheart",
 };
 
 static void dbs_check_cpu(struct cpu_dbs_info_s *this_dbs_info)
@@ -481,7 +483,7 @@ static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
 		else if (policy->min > this_dbs_info->cur_policy->cur)
 			__cpufreq_driver_target(
 					this_dbs_info->cur_policy,
-					policy->min, CPUFREQ_RELATION_L);
+					policy->min, CPUFREQ_RELATION_C);
 		mutex_unlock(&this_dbs_info->timer_mutex);
 
 		break;
@@ -493,7 +495,7 @@ static int cpufreq_governor_dbs(struct cpufreq_policy *policy,
 static
 #endif
 struct cpufreq_governor cpufreq_gov_lionheart = {
-	.name			= "lionheart",
+	.name			= "Lionheart",
 	.governor		= cpufreq_governor_dbs,
 	.max_transition_latency	= TRANSITION_LATENCY_LIMIT,
 	.owner			= THIS_MODULE,
