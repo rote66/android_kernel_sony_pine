@@ -88,16 +88,16 @@
 #define GPU_DVFS_VOLT1	 (115000)	/* mV x 100 */
 #define GPU_DVFS_VOLT2	 (105000)	/* mV x 100 */
 #else
-#define GPU_DVFS_FREQ0	 (720000)	/* KHz */
-#define GPU_DVFS_FREQ0_0   (650000)	/* KHz */
-#define GPU_DVFS_FREQ0_P	 (617250)	/* KHz */
+#define GPU_DVFS_FREQ0	 (650000)	/* KHz */
+#define GPU_DVFS_FREQ0_0	 (617250)	/* KHz */
 #define GPU_DVFS_FREQ0_1   (598000)	/* KHz */
 #define GPU_DVFS_FREQ1	 (549250)	/* KHz */
 #define GPU_DVFS_FREQ2   (497250)   /* KHz */
 #define GPU_DVFS_FREQ3	 (448500)	/* KHz */
 #define GPU_DVFS_FREQ4	 (418500)	/* KHz */
 #define GPU_DVFS_FREQ5	 (388500)	/* KHz */
-#define GPU_DVFS_FREQ6	 (279500)	/* KHz */
+#define GPU_DVFS_FREQ6	 (299000)	/* KHz */
+#define GPU_DVFS_FREQ7	 (279500)	/* KHz */
 #define GPUFREQ_LAST_FREQ_LEVEL	(GPU_DVFS_FREQ6)
 
 #define GPU_DVFS_VOLT0	 (125000)	/* mV x 100 */
@@ -107,7 +107,7 @@
 
 /* efuse */
 #define GPUFREQ_EFUSE_INDEX		 (3)
-#define GPU_DEFAULT_MAX_FREQ_MHZ	(450)
+#define GPU_DEFAULT_MAX_FREQ_MHZ	(650)
 #define GPU_DEFAULT_TYPE			(1)
 
 /*
@@ -217,7 +217,6 @@ static struct mt_gpufreq_table_info mt_gpufreq_opp_tbl_e1_1[] = {
 static struct mt_gpufreq_table_info mt_gpufreq_opp_tbl_e1_2[] = {
 	GPUOP(GPU_DVFS_FREQ0, GPU_DVFS_VOLT0),
 	GPUOP(GPU_DVFS_FREQ0_0, GPU_DVFS_VOLT0),
-    GPUOP(GPU_DVFS_FREQ0_P, GPU_DVFS_VOLT0),
 	GPUOP(GPU_DVFS_FREQ0_1, GPU_DVFS_VOLT0),
 	GPUOP(GPU_DVFS_FREQ1, GPU_DVFS_VOLT0),
 	GPUOP(GPU_DVFS_FREQ2, GPU_DVFS_VOLT1),
@@ -225,6 +224,7 @@ static struct mt_gpufreq_table_info mt_gpufreq_opp_tbl_e1_2[] = {
     GPUOP(GPU_DVFS_FREQ4, GPU_DVFS_VOLT1),
     GPUOP(GPU_DVFS_FREQ5, GPU_DVFS_VOLT2),
     GPUOP(GPU_DVFS_FREQ6, GPU_DVFS_VOLT2),
+    GPUOP(GPU_DVFS_FREQ7, GPU_DVFS_VOLT2),
 };
 
 /* LV3: 550MHz with 3 OPP lv */
@@ -907,9 +907,6 @@ static int _mt_gpufreq_set_cur_volt(unsigned int new_oppidx)
     case GPU_DVFS_FREQ0_0:
         g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_PERF);
         break;
-    case GPU_DVFS_FREQ0_P:
-        g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_PERF);
-        break;
 	case GPU_DVFS_FREQ0_1:
         g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_PERF);
 #endif
@@ -936,6 +933,9 @@ static int _mt_gpufreq_set_cur_volt(unsigned int new_oppidx)
 		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_LOW_PWR);
 		break;
     case GPU_DVFS_FREQ6:
+		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_LOW_PWR);
+		break;
+    case GPU_DVFS_FREQ7:
 		g_last_gpu_dvs_result = vcorefs_request_dvfs_opp(KIR_GPU, OPPI_LOW_PWR);
 		break;
 	default:
