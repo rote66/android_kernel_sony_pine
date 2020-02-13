@@ -1,4 +1,4 @@
-#subdir-ccflags-y := -Ofast
+subdir-ccflags-y := -Ofast
 # CPUfreq core
 obj-$(CONFIG_CPU_FREQ)			+= cpufreq.o freq_table.o
 obj-$(CONFIG_PM_OPP)			+= cpufreq_opp.o
