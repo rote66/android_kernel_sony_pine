@@ -237,8 +237,9 @@
 #define CPUFREQ_BOUNDARY_FOR_FHCTL (CPU_DVFS_FREQ1)
 #define CPUFREQ_FIX_FREQ_FOR_ES	(CPU_DVFS_FREQ2)
 #else
-#define CPU_DVFS_FREQ0   (1495000)	/* KHz */
-#define CPU_DVFS_FREQ0_1 (1443000)	/* KHz */
+#define CPU_DVFS_FREQ0   (1560000)	/* KHz */
+#define CPU_DVFS_FREQ0_1 (1495000)	/* KHz */
+#define CPU_DVFS_FREQ0_2 (1443000)	/* KHz */
 #define CPU_DVFS_FREQ1   (1300000)	/* KHz */
 #define CPU_DVFS_FREQ2   (1235000)	/* KHz */
 #define CPU_DVFS_FREQ3   (1170000)	/* KHz */
@@ -821,14 +822,18 @@ static struct mt_cpu_freq_info opp_tbl_e1_2[] = {
 
 /* CPU LEVEL 3, 1.45GHz segment */
 static struct mt_cpu_freq_info opp_tbl_e1_3[] = {
+    OP(CPU_DVFS_FREQ0, 127125),
 	OP(CPU_DVFS_FREQ0_1, 125000),
+    OP(CPU_DVFS_FREQ0_2, 125000),
 	OP(CPU_DVFS_FREQ1,  123125),
 	OP(CPU_DVFS_FREQ3,  120625),
 	OP(CPU_DVFS_FREQ4,  115000),
 	OP(CPU_DVFS_FREQ5,  110000),
 	OP(CPU_DVFS_FREQ6,  105000),
 	OP(CPU_DVFS_FREQ7,  100000),
+    OP(CPU_DVFS_FREQ7_1,  100000),
 	OP(CPU_DVFS_FREQ8,  95000),
+    OP(CPU_DVFS_FREQ8_1,  95000),
 };
 
 /* CPU LEVEL 4, 1.1GHz segment (for 37T to 35M+)*/
@@ -3219,8 +3224,8 @@ static void _mt_cpufreq_power_calculation(struct mt_cpu_dvfs *p, int oppidx, int
 #define CA53_REF_POWER		988	/* mW  */
 #define CA53_REF_FREQ		  1000000	/* KHz */
 #else
-#define CA53_REF_POWER		1228	/* mW  */
-#define CA53_REF_FREQ		  1300000	/* KHz */
+#define CA53_REF_POWER		1402	/* mW  */
+#define CA53_REF_FREQ		  1560000	/* KHz */
 #endif
 #define CA53_REF_VOLT		  125000	/* mV * 100 */
 
