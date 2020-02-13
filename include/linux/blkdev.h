@@ -452,6 +452,8 @@ struct request_queue {
 #endif
 
 	struct queue_limits	limits;
+    bool			notified_urgent;
+	bool			dispatched_urgent;
 
 	/*
 	 * sg stuff
