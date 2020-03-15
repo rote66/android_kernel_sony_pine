@@ -1,0 +1,20 @@
+#!/bin/bash
+
+VER=$1
+SUB=$2
+
+rm -f repack_zip_los/emp/zImage
+
+mv arch/arm64/boot/Image.gz-dtb repack_zip_los/emp/zImage
+
+cd repack_zip_los
+zip -r G3311_EMP_Kernel_Beta.zip *
+mv G3311_EMP_Kernel_Beta.zip ../
+cd ..
+echo "--------------------------------------------------"
+echo "-              Repack      Completed             -"
+echo "--------------------------------------------------"
+echo "-              kernel  by rote66                 -"
+echo "--------------------------------------------------"
+echo "-Cuttting Edge Aftermarket Sony Phone Technology-"
+echo "--------------------------------------------------"
