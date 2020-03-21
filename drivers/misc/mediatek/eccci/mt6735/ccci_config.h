@@ -1,16 +1,3 @@
-/*
- * Copyright (C) 2015 MediaTek Inc.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- */
-
 #ifndef ECCCI_INTERNAL_OPTION
 #define ECCCI_INTERNAL_OPTION
 /*================================================ */
@@ -46,7 +33,7 @@
 #ifdef CONFIG_MTK_CONN_MD
 #define FEATURE_CONN_MD_EXP_EN
 #endif
-#ifdef CONFIG_MTK_LM_MODE
+#ifndef CONFIG_ARM64
 #define FEATURE_USING_4G_MEMORY_API
 #endif
 #define FEATURE_VLTE_SUPPORT
@@ -67,36 +54,29 @@
 
 #endif
 
-#ifndef CONFIG_MTK_CLKMGR
-#define NO_POWER_OFF_ON_STARTMD
+/* Begin lenovo sw linyf add for SWTP func, 2016-02-01, KOLEOSM-4 */
+#define FEATURE_MTK_SWITCH_TX_POWER
+#ifdef FEATURE_MTK_SWITCH_TX_POWER
+#define SWTP_COMPATIBLE_DEVICE_ID "mediatek, swtp-eint"
 #endif
-/*================================================ */
-/* misc size description */
-#define CCCI_SMEM_DUMP_SIZE      4096 /* smem size we dump when EE */
-#define CCCC_SMEM_CCIF_SRAM_SIZE 16 /* SRAM size we dump into smem */
-#define CCCI_SMEM_SLEEP_MODE_DBG_DUMP 512 /* only dump first 512bytes in sleep mode info */
-/*================================================*/
-/* share memory region description */
-#define CCCI_SMEM_OFFSET_EXCEPTION 0 /* offset in whole share memory region */
-#define CCCI_SMEM_SIZE_EXCEPTION (64*1024) /* exception smem total size */
-/*== subset of exception region begains ==*/
-#define CCCI_SMEM_OFFSET_CCCI_DEBUG CCCI_SMEM_OFFSET_EXCEPTION /* MD CCCI debug info */
-#define CCCI_SMEM_SIZE_CCCI_DEBUG 2048
-#define CCCI_SMEM_OFFSET_MDSS_DEBUG (CCCI_SMEM_OFFSET_EXCEPTION+CCCI_SMEM_SIZE_CCCI_DEBUG) /* MD SS debug info */
-#define CCCI_SMEM_OFFSET_CCIF_SRAM (CCCI_SMEM_OFFSET_MDSS_DEBUG+1024-CCCC_SMEM_CCIF_SRAM_SIZE)
-#define CCCI_SMEM_OFFSET_EPON (CCCI_SMEM_OFFSET_EXCEPTION+0xC64)
-#define CCCI_SMEM_OFFSET_EPOF  (CCCI_SMEM_OFFSET_EXCEPTION+8*1024+31*4)
-#define CCCI_SMEM_OFFSET_SEQERR (CCCI_SMEM_OFFSET_EXCEPTION+0x34)
-#define CCCI_SMEM_SIZE_MDSS_DEBUG 2048 /* MD SS debug info size except MD1 */
-#define CCCI_SMEM_SIZE_SLEEP_MODE_DBG 1024 /* MD sleep mode debug info section in exception region tail */
-#define CCCI_SMEM_OFFSET_SLEEP_MODE_DBG (CCCI_SMEM_OFFSET_EXCEPTION+CCCI_SMEM_SIZE_EXCEPTION \
-										-CCCI_SMEM_SIZE_SLEEP_MODE_DBG)
-/*== subset of exception region ends ==*/
-#define CCCI_SMEM_OFFSET_RUNTIME (CCCI_SMEM_OFFSET_EXCEPTION+CCCI_SMEM_SIZE_EXCEPTION)
-#define CCCI_SMEM_SIZE_RUNTIME_AP 0x800 /* AP runtime data size */
-#define CCCI_SMEM_SIZE_RUNTIME_MD 0x800 /* MD runtime data size */
+/* End KOLEOSM-4 */
+
+#define CCCI_SMEM_DUMP_SIZE			4096/* smem size we dump when EE */
+#define CCCI_SMEM_SIZE_EXCEPTION	0x10000/* exception smem total size */
+#define CCCI_SMEM_SIZE_RUNTIME_AP	0x800/* AP runtime data size */
+#define CCCI_SMEM_SIZE_RUNTIME_MD 0x800/* MD runtime data size */
 #define CCCI_SMEM_SIZE_RUNTIME	(CCCI_SMEM_SIZE_RUNTIME_AP+CCCI_SMEM_SIZE_RUNTIME_MD)
-/*================================================ */
+#define CCCI_SMEM_OFFSET_EXREC 2048/* where the exception record begain in smem */
+#define CCCC_SMEM_CCIF_SRAM_SIZE 16
+#define CCCI_SMEM_OFFSET_CCIF_SRAM (CCCI_SMEM_OFFSET_EXREC+1024-CCCC_SMEM_CCIF_SRAM_SIZE)
+#define CCCI_SMEM_OFFSET_EPON 0xC64
+#define CCCI_SMEM_OFFSET_SEQERR 0x34
+#define CCCI_SMEM_OFFSET_CCCI_DEBUG 0 /* where the MD CCCI debug info begain in smem */
+#define CCCI_SMEM_CCCI_DEBUG_SIZE 2048 /* MD CCCI debug info size */
+#define CCCI_SMEM_OFFSET_MDSS_DEBUG 2048 /* where the MD SS debug info begain in smem */
+#define CCCI_SMEM_MDSS_DEBUG_SIZE 2048 /* MD SS debug info size */
+#define CCCI_SMEM_SLEEP_MODE_DBG_SIZE 1024 /* MD sleep mode debug info section in smem tail */
+#define CCCI_SMEM_SLEEP_MODE_DBG_DUMP 512 /* only dump first 512bytes in sleep mode info */
 
 /*================================================ */
 /*Configure value option part*/

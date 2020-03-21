@@ -1,16 +1,3 @@
-/*
- * Copyright (C) 2015 MediaTek Inc.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- */
-
 
 #ifndef __CCCI_CCMNI_H__
 #define __CCCI_CCMNI_H__
@@ -33,17 +20,6 @@
 #include <linux/dma-mapping.h>
 #include <mt-plat/mt_ccci_common.h>
 
-/*
- * normal workqueue:   MODEM_CAP_NAPI=0, ENABLE_NAPI_GRO=0, ENABLE_WQ_GRO=0
- * workqueue with GRO: MODEM_CAP_NAPI=0, ENABLE_NAPI_GRO=0, ENABLE_WQ_GRO=1
- * NAPI without GRO:   MODEM_CAP_NAPI=1, ENABLE_NAPI_GRO=0, ENABLE_WQ_GRO=0
- * NAPI with GRO:      MODEM_CAP_NAPI=1, ENABLE_NAPI_GRO=1, ENABLE_WQ_GRO=0
- */
-/* #define ENABLE_NAPI_GRO */
-#ifdef CONFIG_MTK_ECCCI_C2K
-//#define ENABLE_WQ_GRO
-#endif
-
 #define  CCMNI_MTU              1500
 #define  CCMNI_TX_QUEUE         1000
 #define  CCMNI_NETDEV_WDT_TO    (1*HZ)
@@ -53,8 +29,6 @@
 
 #define  SIOCSTXQSTATE          (SIOCDEVPRIVATE + 0)  /* stop/start tx queue */
 #define  SIOCCCMNICFG           (SIOCDEVPRIVATE + 1)  /* configure ccmni/md remapping */
-#define  SIOCFWDFILTER          (SIOCDEVPRIVATE + 2)  /* forward filter for ccmni tx packet */
-#define  CCMNI_FLT_NUM          32
 
 typedef struct ccmni_ctl_block ccmni_ctl_block_t;
 
@@ -63,37 +37,7 @@ struct ccmni_ch {
 	int		   rx_ack;
 	int		   tx;
 	int		   tx_ack;
-	int		   dl_ack;
-	int		   multiq;
 };
-
-typedef enum {
-	CCMNI_FLT_ADD    = 1,
-	CCMNI_FLT_DEL    = 2,
-	CCMNI_FLT_FLUSH  = 3,
-} CCMNI_FLT_TYPE;
-
-typedef struct ccmni_fwd_filter {
-	u16 ver;           /* ipv4 or ipv6*/
-	u8 s_pref;         /* mask number for source ip address */
-	u8 d_pref;         /* mask number for dest ip address */
-	union {
-		struct {
-			u32 saddr; /* source ip address */
-			u32 daddr; /* dest ip address */
-		} ipv4;
-		struct {
-			u32 saddr[4];
-			u32 daddr[4];
-		} ipv6;
-	};
-} ccmni_fwd_filter_t;
-
-typedef struct ccmni_flt_act {
-	u32 action;
-	struct ccmni_fwd_filter flt;
-} ccmni_flt_act_t;
-
 
 typedef struct ccmni_instance {
 	int                index;
@@ -101,18 +45,15 @@ typedef struct ccmni_instance {
 	struct ccmni_ch    ch;
 	int                net_if_off;
 	atomic_t           usage;
-	/* use pointer to keep these items unique, while switching between CCMNI instances */
-	struct timer_list  *timer;
+	struct timer_list  timer;
 	struct net_device  *dev;
-	struct napi_struct *napi;
+	struct napi_struct napi;
 	unsigned int       rx_seq_num;
 	unsigned int       tx_seq_num[2];
 	unsigned int       flags;
 	spinlock_t	       spinlock;
 	ccmni_ctl_block_t  *ctlb;
-	unsigned long      tx_busy_cnt[2];
-	unsigned int       flt_cnt;
-	ccmni_fwd_filter_t flt_tbl[CCMNI_FLT_NUM];
+	unsigned long      tx_busy_cnt;
 	void               *priv_data;
 } ccmni_instance_t;
 
@@ -123,31 +64,28 @@ typedef struct ccmni_ccci_ops {
 	unsigned int       md_ability;
 	unsigned int       irat_md_id;  /* with which md on iRAT */
 	unsigned int       napi_poll_weigh;
-	int (*send_pkt)(int md_id, int ccmni_idx, void *data, int is_ack);
-	int (*napi_poll)(int md_id, int ccmni_idx, struct napi_struct *napi, int weight);
+	int (*send_pkt)(int md_id, int tx_ch, void *data);
+	int (*napi_poll)(int md_id, int rx_ch, struct napi_struct *napi , int weight);
 	int (*get_ccmni_ch)(int md_id, int ccmni_idx, struct ccmni_ch *channel);
 } ccmni_ccci_ops_t;
 
 typedef struct ccmni_ctl_block {
 	ccmni_ccci_ops_t   *ccci_ops;
-	ccmni_instance_t   *ccmni_inst[32];
+	ccmni_instance_t   *ccmni_inst[16];
 	unsigned int       md_sta;
 	struct wake_lock   ccmni_wakelock;
 	char               wakelock_name[16];
-	unsigned long long net_rx_delay[4];
 } ccmni_ctl_block_t;
 
 struct ccmni_dev_ops {
 	/* must-have */
 	int  skb_alloc_size;
 	int  (*init)(int md_id, ccmni_ccci_ops_t *ccci_info);
-	int  (*rx_callback)(int md_id, int ccmni_idx, struct sk_buff *skb, void *priv_data);
-	void (*md_state_callback)(int md_id, int ccmni_idx, MD_STATE state, int is_ack);
+	int  (*rx_callback)(int md_id, int rx_ch, struct sk_buff *skb, void *priv_data);
+	void (*md_state_callback)(int md_id, int rx_ch, MD_STATE state);
 	void (*exit)(int md_id);
-	void (*dump)(int md_id, int ccmni_idx, unsigned int flag);
-	void (*dump_rx_status)(int md_id, int ccmni_idx, unsigned long long *status);
-	struct ccmni_ch *(*get_ch)(int md_id, int ccmni_idx);
-	int (*is_ack_skb)(int md_id, struct sk_buff *skb);
+	void (*dump)(int md_id, int rx_ch, unsigned int flag);
+	void (*dump_rx_status)(int md_id, int rx_ch, unsigned long long *status);
 };
 
 

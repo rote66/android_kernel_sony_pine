@@ -1,16 +1,3 @@
-/*
- * Copyright (C) 2015 MediaTek Inc.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- */
-
 /*****************************************************************************
  *
  * Filename:
@@ -326,14 +313,14 @@ static void timer_func(unsigned long data)
 	int contin = 0;
 	int ret = 0;
 	struct ccci_msg_t msg;
-	struct ccmni_v2_ctl_block_t *ctl_b;
-	int md_id;
+	struct ccmni_v2_ctl_block_t *ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
+	int md_id = ctl_b->m_md_id;
 
-	ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
-	if (ctl_b == 0)
-		return;
-	md_id = ctl_b->m_md_id;
 	spin_lock_bh(&ccmni->spinlock);
+
+	if (ctl_b == 0)
+		goto out;
+
 	if (test_bit(CCMNI_RECV_ACK_PENDING, &ccmni->flags)) {
 		msg.magic = 0;
 		msg.id = CCMNI_CHANNEL_OFFSET + ccmni->channel;
@@ -363,6 +350,8 @@ static void timer_func(unsigned long data)
 	}
 	if (test_bit(CCMNI_RECV_PENDING, &ccmni->flags))
 		tasklet_schedule(&ccmni->tasklet);
+
+ out:
 	spin_unlock_bh(&ccmni->spinlock);
 	if (contin)
 		mod_timer(&ccmni->timer, jiffies + 2);
@@ -418,22 +407,16 @@ static int ccmni_v2_receive(struct ccmni_v2_instance_t *ccmni,
 {
 	int packet_type, ret = 0;
 	struct sk_buff *skb;
-	struct ccmni_v2_ctl_block_t *ctl_b;
-	int md_id = -1;
+	struct ccmni_v2_ctl_block_t *ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
+	int md_id = ctl_b->m_md_id;
 
-	if (ccmni == NULL) {
-		CCCI_MSG_INF(md_id, "net",
-			     "CCMNI_v2_receive: ccmni is null\n");
-		return -1;
-	}
-	if ((ccmni_ptr == NULL) || (ccmni_len <= 0)) {
+	if ((ccmni == NULL) || (ccmni_ptr == NULL) || (ccmni_len <= 0)) {
 		CCCI_MSG_INF(md_id, "net",
 			     "CCMNI%d_receive: invalid private data\n",
 			     ccmni->channel);
-		return -1;
+		ret = -1;
 	}
-	ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
-	md_id = ctl_b->m_md_id;
+
 	skb = dev_alloc_skb(ccmni_len);
 
 	if (skb) {
@@ -486,18 +469,16 @@ static void ccmni_v2_read(unsigned long arg)
 	struct ccmni_v2_instance_t *ccmni = (struct ccmni_v2_instance_t *) arg;
 	unsigned char *ccmni_ptr;
 	unsigned int ccmni_len, q_idx;
-	struct ccmni_v2_ctl_block_t *ctl_b;
-	int md_id = -1;
+	struct ccmni_v2_ctl_block_t *ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
+	int md_id = ctl_b->m_md_id;
 	struct ccci_msg_t msg;
 
 	if (ccmni == NULL) {
-		CCCI_MSG_INF(md_id, "net",
-			     "ccmni_v2_read: ccmni is null\n");
+		CCCI_DBG_MSG(md_id, "net",
+			     "[Error]CCMNI%d_read: invalid private data\n",
+			     ccmni->channel);
 		return;
 	}
-
-	ctl_b = (struct ccmni_v2_ctl_block_t *) ccmni->owner;
-	md_id = ctl_b->m_md_id;
 
 	spin_lock_bh(&ccmni->spinlock);
 
