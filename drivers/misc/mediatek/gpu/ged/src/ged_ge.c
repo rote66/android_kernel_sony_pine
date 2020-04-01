@@ -264,9 +264,23 @@ GEEntry *_gehnd2entry(uint32_t ge_hnd)
 uint32_t ged_ge_alloc(int region_num, uint32_t *region_sizes)
 {
 	int i;
-	GEEntry *entry = (GEEntry *)kmem_cache_zalloc(gPoolCache, GFP_KERNEL);
+	//GEEntry *entry = (GEEntry *)kmem_cache_zalloc(gPoolCache, GFP_KERNEL);
+	GEEntry *entry = NULL;
 	int idx = -1;
 	uint32_t ge_hnd = GE_INVALID_GEHND;
+
+  if (region_num < 0 || region_num >= GE_REGION_NUM_MAX) {
+      GE_PERR("region num check fail, region_num:%d\n", region_num);
+      goto err_entry;
+  }
+    for (i = 0; i < region_num; ++i) {
+      if (region_sizes[i] >= GE_REGION_SIZE_MAX) {
+          GE_PERR("region size check fail, region_sizes[%d]:%d\n", i, region_sizes[i]);
+          goto err_entry;
+      }
+  }
+  entry = (GEEntry *)kmem_cache_zalloc(gPoolCache, GFP_KERNEL);
+
 
 	if (!entry) {
 		GE_PERR("alloc entry fail, size:%zu\n", sizeof(GEEntry));
@@ -374,6 +388,24 @@ unlock_exit:
 	return -1;
 }
 
+static int valid_parameters(GEEntry *entry, int region_id, int u32_offset, int u32_size)
+{
+    if (region_id < 0 || region_id >= entry->region_num ||
+        u32_offset < 0 || u32_size < 0 ||
+        u32_offset > entry->region_sizes[region_id]/sizeof(uint32_t) ||
+        u32_offset >= UINT_MAX - u32_size ||
+        (u32_offset + u32_size) > entry->region_sizes[region_id]/sizeof(uint32_t)
+        ) {
+        GE_PERR("fail, invalid r_id %d, o %d, s %d\n",
+                region_id, u32_offset, u32_size);
+
+        return -EFAULT;
+    }
+
+    return 0;
+}
+
+
 int ged_ge_get(uint32_t ge_hnd, int region_id, int u32_offset, int u32_size, uint32_t *output_data)
 {
 	uint32_t i;
@@ -388,6 +420,9 @@ int ged_ge_get(uint32_t ge_hnd, int region_id, int u32_offset, int u32_size, uin
 		GE_PERR("ge_hnd invalid 0x%x\n", ge_hnd);
 		return -1;
 	}
+
+  if (valid_parameters(entry, region_id, u32_offset, u32_size))
+      return -1;
 
 	pregion_data = entry->region_data[region_id];
 	if (pregion_data) {
@@ -416,9 +451,18 @@ int ged_ge_set(uint32_t ge_hnd, int region_id, int u32_offset, int u32_size, uin
 		return -1;
 	}
 
+  if (valid_parameters(entry, region_id, u32_offset, u32_size))
+      return -1;
+
+
 	if (!entry->region_data[region_id]) {
 		/* lazy allocate */
 		entry->region_data[region_id] = kmalloc(entry->region_sizes[region_id], GFP_KERNEL);
+    if (!entry->region_data[region_id]) {
+        GE_PERR("alloc region data fail, region_size[%d] = %d\n",
+            region_id, entry->region_sizes[region_id]);
+        return -1;
+    }
 		memset(entry->region_data[region_id], 0, entry->region_sizes[region_id]);
 	}
 
