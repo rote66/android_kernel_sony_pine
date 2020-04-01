@@ -23,6 +23,9 @@
 #define GE_INVALID_GEHND        0
 #define GE_GEHND2IDX(gehnd)     ((gehnd) & (GE_POOL_ENTRY_SIZE - 1))
 #define GE_GEHND2VER(gehnd)     ((gehnd) >> GE_POOL_ENTRY_SHIFT)
+#define GE_REGION_NUM_MAX       8
+#define GE_REGION_SIZE_MAX      256
+
 
 int ged_ge_init(void);
 int ged_ge_exit(void);

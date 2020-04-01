@@ -114,6 +114,7 @@ static long ged_dispatch(struct file *pFile, GED_BRIDGE_PACKAGE *psBridgePackage
 	 * That is: if overflow happen, the sum will be a negative number.
 	 */
 	if (psBridgePackageKM->i32InBufferSize >= 0 && psBridgePackageKM->i32OutBufferSize >= 0
+      && psBridgePackageKM->i32InBufferSize < UINT_MAX - psBridgePackageKM->i32OutBufferSize
 			&& psBridgePackageKM->i32InBufferSize + psBridgePackageKM->i32OutBufferSize >= 0
 			&& psBridgePackageKM->i32InBufferSize + psBridgePackageKM->i32OutBufferSize
 			< GED_IOCTL_PARAM_BUF_SIZE)
